@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="gestFct">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/gestFct.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

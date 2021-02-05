@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="600.0" stylesheets="@CustomTheme.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.Controlador">
+   <Label fx:id="titulo" layoutX="118.0" layoutY="32.0" text="VISOR DE LAS CUENTAS EXISTENTES">
+      <font>
+         <Font name="System Bold" size="22.0" />
+      </font>
+   </Label>
+   <Label layoutX="40.0" layoutY="119.0" text="Numero :">
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font>
+   </Label>
+   <Label layoutX="40.0" layoutY="151.0" text="Titular :">
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font>
+   </Label>
+   <Label layoutX="40.0" layoutY="183.0" text="Fecha apertura :">
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font>
+   </Label>
+   <Label layoutX="40.0" layoutY="215.0" text="Saldo :">
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font>
+   </Label>
+   <Button fx:id="leftButton" layoutX="33.0" layoutY="310.0" mnemonicParsing="false" onAction="#leftButtonPressed" prefHeight="25.0" prefWidth="130.0" text="&lt;&lt;" visible="false">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font></Button>
+   <Button fx:id="rightButton" layoutX="426.0" layoutY="310.0" mnemonicParsing="false" onAction="#rightButtonPressed" prefHeight="25.0" prefWidth="130.0" text="&gt;&gt;" visible="false">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font></Button>
+   <TextField fx:id="numeroTextfield" editable="false" layoutX="308.0" layoutY="115.0" prefHeight="25.0" prefWidth="260.0" />
+   <TextField fx:id="titularTextfield" editable="false" layoutX="308.0" layoutY="147.0" prefHeight="25.0" prefWidth="260.0" />
+   <TextField fx:id="fechaTextfield" editable="false" layoutX="308.0" layoutY="179.0" prefHeight="25.0" prefWidth="260.0" />
+   <TextField fx:id="saldoTextfield" editable="false" layoutX="308.0" layoutY="211.0" prefHeight="25.0" prefWidth="260.0" />
+</AnchorPane>
