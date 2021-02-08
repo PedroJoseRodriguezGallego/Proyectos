@@ -1,4 +1,0 @@
->[Programa Gestión FCT][infoGeneral]
-   |[Gestión de Empresas][gestionEmpresas]
-   |[Asignación de Alumnos][asignAlumnos]
-   |[Ficheros a tabla][fichTabla]
