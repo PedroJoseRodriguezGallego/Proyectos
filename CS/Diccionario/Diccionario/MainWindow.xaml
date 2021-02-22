@@ -1,0 +1,59 @@
+﻿<Window x:Class="Diccionario.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Diccionario"
+        mc:Ignorable="d"
+        Title="Diccionario - E1 - 2T - DDI" Height="300" Width="350">
+    <Grid>
+        <TabControl SelectionChanged="TabControl_SelectionChanged">
+            <TabItem x:Name="ingEsp" Header="Inglés-Español">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="99*"/>
+                        <ColumnDefinition Width="73*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Inglés:" HorizontalAlignment="Left" Margin="50,20,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtBuscaIngles" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top" Width="250" Grid.ColumnSpan="2"/>
+                    <Label Content="Español:" HorizontalAlignment="Left" Margin="50,80,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtResulEspanol" HorizontalAlignment="Center" Margin="0,110,0,0" VerticalAlignment="Top" Width="250" IsReadOnly="true" Background="#FFDADADA" Grid.ColumnSpan="2"/>
+                    <Button x:Name="btnTraduceIngles" Content="Traducir a Español" HorizontalAlignment="Center" Margin="0,0,0,50" VerticalAlignment="Bottom" Width="200" Grid.ColumnSpan="2" Click="btnTraduceIngles_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="espIng" Header="Español-Inglés">
+                <Grid Background="#FFE5E5E5">
+                    <Label Content="Español:" HorizontalAlignment="Left" Margin="50,20,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtBuscaEspanol" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top" Width="250"/>
+                    <Label Content="Inglés:" HorizontalAlignment="Left" Margin="50,80,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtResulIngles" HorizontalAlignment="Center" Margin="0,110,0,0" VerticalAlignment="Top" Width="250" IsReadOnly="true" Background="#FFDADADA"/>
+                    <Button x:Name="btnTraduceEspanol" Content="Traducir a Inglés" HorizontalAlignment="Center" Margin="0,0,0,50" VerticalAlignment="Bottom" Width="200" Click="btnTraduceEspanol_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="juego"  Header="Juego">
+                <Grid Background="#FFE5E5E5">
+                    <Label Content="Inglés:" HorizontalAlignment="Left" Margin="50,20,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtParaAdivinar" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top" Width="250" IsReadOnly="true" Background="#FFDADADA"/>
+                    <Label Content="Respuesta:" HorizontalAlignment="Left" Margin="50,80,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtRespuesta" HorizontalAlignment="Center" Margin="0,110,0,0" VerticalAlignment="Top" Width="250"/>
+                    <Label x:Name="lblRecuento" Content="Palabra 4/10" HorizontalAlignment="Right" Margin="0,0,10,53" VerticalAlignment="Bottom" Width="90" FontWeight="Bold"/>
+                    <Label x:Name="lblAciertos" Content="Aciertos: 2" HorizontalAlignment="Right" Margin="0,0,10,33" VerticalAlignment="Bottom" Width="90" FontWeight="Bold" Foreground="#FF0E9B00"/>
+                    <Label x:Name="lblFallos" Content="Fallos: 2" HorizontalAlignment="Right" Margin="0,0,10,13" VerticalAlignment="Bottom" Width="90" FontWeight="Bold" Foreground="Red"/>
+                    <Button x:Name="btnEmpezar" Content="Empezar" HorizontalAlignment="Center" Margin="0,0,210,15" VerticalAlignment="Bottom" Width="90" Height="60" FontWeight="Bold" Click="btnEmpezar_Click"/>
+                    <Button x:Name="btnSiguiente" Content="Siguiente" HorizontalAlignment="Center" Margin="0,0,0,15" VerticalAlignment="Bottom" Width="90" Height="60" Visibility="Hidden" Click="btnSiguiente_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="lista" Header="Listado ordenado">
+                <Grid Background="#FFE5E5E5">
+                    <TextBox x:Name="txtTraducciones" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="324" Height="162" IsReadOnly="True"/>
+                    <Label Content="Inglés:" HorizontalAlignment="Left" Margin="10,0,0,30" VerticalAlignment="Bottom"/>
+                    <Label Content="Español:" HorizontalAlignment="Left" Margin="120,0,0,30" VerticalAlignment="Bottom"/>
+                    <TextBox x:Name="txtIngles" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="100"/>
+                    <TextBox x:Name="txtEspanol" HorizontalAlignment="Left" Margin="120,0,0,10" VerticalAlignment="Bottom" Width="100"/>
+                    <Button x:Name="btnAnadir" Content="Añadir" HorizontalAlignment="Right" Margin="0,0,10,35" VerticalAlignment="Bottom" Width="85" FontWeight="Bold" Click="btnAnadir_Click"/>
+                    <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="85" Click="btnEliminar_Click"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

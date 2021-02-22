@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Fondo.png" />
+    <None Remove="logo.png" />
+    <None Remove="tarjetas.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fondo.png" />
+    <Resource Include="logo.png" />
+    <Resource Include="tarjetas.png" />
+  </ItemGroup>
+
+</Project>
