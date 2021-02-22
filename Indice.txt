@@ -1,5 +1,5 @@
 --> CS
-	- Fruit Hunter :
+	- Fruit Hunter : Clases y codigos empleados para la creacion de un videojuego en C# (link en la carpeta), ademas de los elementos audiovisuales usados.
 	- Diccionario : 
 	- Financiero :
 
@@ -9,7 +9,7 @@
 	- Calculador Movilidad : Aplicación con interfaz gráfica que nos permite averiguar que tipo de pago en el transporte público nos es más favorable (usando Swing).
 	- Gestion FCT :
 	- Visor Cuentas :
-	- Neuafrica : SUBIR PROYECTO
+	- Neuafrica :
 
 
 
