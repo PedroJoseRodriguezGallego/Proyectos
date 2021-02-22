@@ -23,5 +23,5 @@
 --> Python
 	- Breakout :
 	- Pong :
-	- Brute Force : SUBIR PROYECTO
-	- BOT Telegram e Instagram Scrapper : SUBIR PROYECTO
+	- Brute Force :
+	- BOT Telegram e Instagram Scrapper :
