@@ -1,0 +1,27 @@
+--> CS
+	- Fruit Hunter :
+	- Diccionario : 
+	- Financiero :
+
+
+
+--> Java
+	- Calculador Movilidad :
+	- Gestion FCT :
+	- Visor Cuentas :
+	- Neuafrica : SUBIR PROYECTO
+
+
+
+--> Kotlin
+	- Neuropa :
+	- Numerandom :
+	- Neuafrica : SUBIR PROYECTO
+
+
+
+--> Python
+	- Breakout :
+	- Pong :
+	- Brute Force : SUBIR PROYECTO
+	- BOT Telegram e Instagram Scrapper : SUBIR PROYECTO
