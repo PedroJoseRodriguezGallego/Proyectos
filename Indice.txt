@@ -6,7 +6,7 @@
 
 
 --> Java
-	- Calculador Movilidad :
+	- Calculador Movilidad : Aplicación con interfaz gráfica que nos permite averiguar que tipo de pago en el transporte público nos es más favorable (usando Swing).
 	- Gestion FCT :
 	- Visor Cuentas :
 	- Neuafrica : SUBIR PROYECTO
@@ -21,7 +21,7 @@
 
 
 --> Python
-	- Breakout :
-	- Pong :
-	- Brute Force :
-	- BOT Telegram e Instagram Scrapper :
+	- Breakout : Videojuego basado en romper ladrillos con un elemento que rebote por toda la pantalla (usando PyGame).
+	- Pong : Videojuego basado en ping pong en el que nosotros seremos un jugador y el otro será controlado por IA (usando PyGame).
+	- Brute Force : Aplicación que nos permite averiguar una contraseña a traves de combinaciones de caracteres aleatorios sin repetir 2 veces la misma combinación.
+	- BOT Telegram e Instagram Scrapper : BOT de telegram que esperará a recibir un perfil de Instagram y te enviará un PDF con datos obtenidos del perfil.
