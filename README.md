@@ -4,22 +4,29 @@ Repositorio donde encontraras todos los proyectos realizados por Pedro José Rod
 
 --> CS
 	- Fruit Hunter : Clases y codigos empleados para la creacion de un videojuego en C# (link en la carpeta), ademas de los elementos audiovisuales usados.
+	
 	- Diccionario : 
+	
 	- Financiero :
 
 
 
 --> Java
 	- Calculador Movilidad : Aplicación con interfaz gráfica que nos permite averiguar que tipo de pago en el transporte público nos es más favorable (usando Swing).
+	
 	- Gestion FCT :
+	
 	- Visor Cuentas :
+	
 	- Neuafrica :
 
 
 
 --> Kotlin
 	- Neuropa :
+	
 	- Numerandom :
+	
 	- Neuafrica : SUBIR PROYECTO
 
 
