@@ -33,6 +33,9 @@ Repositorio donde encontraras todos los proyectos realizados por Pedro José Rod
 
 --> Python
 	- Breakout : Videojuego basado en romper ladrillos con un elemento que rebote por toda la pantalla (usando PyGame).
+	
 	- Pong : Videojuego basado en ping pong en el que nosotros seremos un jugador y el otro será controlado por IA (usando PyGame).
+	
 	- Brute Force : Aplicación que nos permite averiguar una contraseña a traves de combinaciones de caracteres aleatorios sin repetir 2 veces la misma combinación.
+	
 	- Telebot_IGCrawler : BOT de telegram que esperará a recibir un perfil de Instagram y te enviará un PDF con datos obtenidos del perfil (usando Telebot).
