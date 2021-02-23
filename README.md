@@ -18,7 +18,7 @@ Repositorio donde encontraras todos los proyectos realizados por Pedro José Rod
 	
 	- Visor Cuentas :
 	
-	- Neuafrica :
+	- Neuafrica :  SUBIR PROYECTO
 
 
 
@@ -27,7 +27,7 @@ Repositorio donde encontraras todos los proyectos realizados por Pedro José Rod
 	
 	- Numerandom :
 	
-	- Neuafrica : SUBIR PROYECTO
+	- Neuafrica :
 
 
 
