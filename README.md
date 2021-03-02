@@ -2,7 +2,7 @@
 Repositorio donde encontraras todos los proyectos realizados por Pedro José Rodríguez Gallego, tanto de forma académica como personal.
 
 
---> CS
+--> C#
 
 	- Fruit Hunter : Clases y códigos empleados para la creación de un videojuego en C# (link en la carpeta), además de los elementos audiovisuales usados (usando Unity).
 	
