@@ -3,6 +3,7 @@ Repositorio donde encontraras todos los proyectos realizados por Pedro José Rod
 
 
 --> CS
+
 	- Fruit Hunter : Clases y códigos empleados para la creación de un videojuego en C# (link en la carpeta), además de los elementos audiovisuales usados (usando Unity).
 	
 	- Diccionario : Aplicación que nos permite interactuar entre traducciones de ingles y español (usando XAML).
@@ -14,6 +15,7 @@ Repositorio donde encontraras todos los proyectos realizados por Pedro José Rod
 
 
 --> Java
+
 	- Calculador Movilidad : Aplicación con interfaz gráfica que nos permite averiguar que tipo de pago en el transporte público nos es más favorable dependiendo de cada persona (usando Swing).
 	
 	- Gestion FCT : Aplicación que nos permite gestionar una base de datos de un centro (usando MariaDB, XML y JavaFX).
@@ -25,6 +27,7 @@ Repositorio donde encontraras todos los proyectos realizados por Pedro José Rod
 
 
 --> Kotlin
+
 	- Neuropa : Aplicación android que nos muestra las distintas capitales de Europa junto a una serie de opciones hasta completarlas todas.
 	
 	- Numerandom : Aplicación android que genera un número aleatorio dependiendo de la cantidad indicada.
@@ -34,6 +37,7 @@ Repositorio donde encontraras todos los proyectos realizados por Pedro José Rod
 
 
 --> Python
+
 	- Breakout : Videojuego basado en el clásico romper ladrillos (usando PyGame).
 	
 	- Pong : Videojuego basado en ping pong en el que nosotros seremos un jugador y el otro será controlado por IA (usando PyGame).
