@@ -1,0 +1,133 @@
+ private void botonInsertar_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                //This is my connection string i have assigned the database file address path  
+                string MyConnection2 = "datasource=localhost;port=3307;username=root;password=root";
+                //This is my insert query in which i am taking input from the user through windows forms  
+                string Query = "insert into student.studentinfo(idStudentInfo,Name,Father_Name,Age,Semester) values('" + this.IdTextBox.Text + "','" + this.NameTextBox.Text + "','" + this.FnameTextBox.Text + "','" + this.AgeTextBox.Text + "','" + this.SemesterTextBox.Text + "');";
+                //This is  MySqlConnection here i have created the object and pass my connection string.  
+                MySqlConnection MyConn2 = new MySqlConnection(MyConnection2);
+                //This is command class which will handle the query and connection object.  
+                MySqlCommand MyCommand2 = new MySqlCommand(Query, MyConn2);
+                MySqlDataReader MyReader2;
+                MyConn2.Open();
+                MyReader2 = MyCommand2.ExecuteReader();     // Here our query will be executed and data saved into the database.  
+                MessageBox.Show("Save Data");
+                while (MyReader2.Read())
+                {
+                }
+                MyConn2.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void botonModificar_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                //This is my connection string i have assigned the database file address path  
+                string MyConnection2 = "datasource=localhost;port=3307;username=root;password=root";
+                //This is my update query in which i am taking input from the user through windows forms and update the record.  
+                string Query = "update student.studentinfo set idStudentInfo='" + this.IdTextBox.Text + "',Name='" + this.NameTextBox.Text + "',Father_Name='" + this.FnameTextBox.Text + "',Age='" + this.AgeTextBox.Text + "',Semester='" + this.SemesterTextBox.Text + "' where idStudentInfo='" + this.IdTextBox.Text + "';";
+                //This is  MySqlConnection here i have created the object and pass my connection string.  
+                MySqlConnection MyConn2 = new MySqlConnection(MyConnection2);
+                MySqlCommand MyCommand2 = new MySqlCommand(Query, MyConn2);
+                MySqlDataReader MyReader2;
+                MyConn2.Open();
+                MyReader2 = MyCommand2.ExecuteReader();
+                MessageBox.Show("Data Updated");
+                while (MyReader2.Read())
+                {
+                }
+                MyConn2.Close();//Connection closed here  
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void botonEliminar_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                string MyConnection2 = "datasource=localhost;port=3307;username=root;password=root";
+                string Query = "delete from student.studentinfo where idStudentInfo='" + this.IdTextBox.Text + "';";
+                MySqlConnection MyConn2 = new MySqlConnection(MyConnection2);
+                MySqlCommand MyCommand2 = new MySqlCommand(Query, MyConn2);
+                MySqlDataReader MyReader2;
+                MyConn2.Open();
+                MyReader2 = MyCommand2.ExecuteReader();
+                MessageBox.Show("Data Deleted");
+                while (MyReader2.Read())
+                {
+                }
+                MyConn2.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void botonSeleccionar_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                string MyConnection2 = "datasource=localhost;port=3307;username=root;password=root";
+                //Display query  
+                string Query = "select * from student.studentinfo;";
+                MySqlConnection MyConn2 = new MySqlConnection(MyConnection2);
+                MySqlCommand MyCommand2 = new MySqlCommand(Query, MyConn2);
+                //  MyConn2.Open();  
+                //For offline connection we weill use  MySqlDataAdapter class.  
+                MySqlDataAdapter MyAdapter = new MySqlDataAdapter();
+                MyAdapter.SelectCommand = MyCommand2;
+                DataTable dTable = new DataTable();
+                MyAdapter.Fill(dTable);
+                dataGridView1.DataSource = dTable; // here i have assign dTable object to the dataGridView1 object to display data.               
+                                                   // MyConn2.Close();  
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+		
+		
+		
+		
+		
+		
+		------------------------------------------------------------------------------------------
+		
+		
+		private static string getConnectionString()
+        {
+            /*
+            string host = "server=localhost;";
+            string port = "port=3306;";
+            string db = "database=cs_smart_crud;";
+            string user = "user=pjrg";
+            string pass = "password=pjrg";
+            string conString = string.Format("{0}{1}{2}{3}{4}",host,port,db,user,pass);
+            */
+
+            string servidor = "localhost"; //Nombre o ip del servidor de MySQL
+            string bd = "cs_smart_crud"; //Nombre de la base de datos
+            string usuario = "pjrg"; //Usuario de acceso a MySQL
+            string password = "pjrg"; //Contraseña de usuario de acceso a MySQL
+
+            string cadenaConexion = "Database=" + bd + "; Data Source=" + servidor + "; User Id=" + usuario + "; Password=" + password + "";
+
+            return cadenaConexion;
+        }
+
+
+        public static MySqlConnection con = new MySqlConnection(getConnectionString());
+        public static MySqlCommand cmd = default(MySqlCommand);
+        public static string sql = string.Empty;
