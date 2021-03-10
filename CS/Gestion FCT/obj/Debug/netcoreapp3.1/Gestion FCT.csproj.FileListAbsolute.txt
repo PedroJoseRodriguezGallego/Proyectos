@@ -1,0 +1,63 @@
+C:\Users\josem\repositorios\2T_DDI_PRAC2\GestionFCT\Gestion FCT\bin\Debug\netcoreapp3.1\Gestion FCT.exe
+C:\Users\josem\repositorios\2T_DDI_PRAC2\GestionFCT\Gestion FCT\bin\Debug\netcoreapp3.1\Gestion FCT.deps.json
+C:\Users\josem\repositorios\2T_DDI_PRAC2\GestionFCT\Gestion FCT\bin\Debug\netcoreapp3.1\Gestion FCT.runtimeconfig.json
+C:\Users\josem\repositorios\2T_DDI_PRAC2\GestionFCT\Gestion FCT\bin\Debug\netcoreapp3.1\Gestion FCT.runtimeconfig.dev.json
+C:\Users\josem\repositorios\2T_DDI_PRAC2\GestionFCT\Gestion FCT\bin\Debug\netcoreapp3.1\Gestion FCT.dll
+C:\Users\josem\repositorios\2T_DDI_PRAC2\GestionFCT\Gestion FCT\bin\Debug\netcoreapp3.1\Gestion FCT.pdb
+C:\Users\josem\repositorios\2T_DDI_PRAC2\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT.csprojAssemblyReference.cache
+C:\Users\josem\repositorios\2T_DDI_PRAC2\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\josem\repositorios\2T_DDI_PRAC2\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\josem\repositorios\2T_DDI_PRAC2\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT_MarkupCompile.cache
+C:\Users\josem\repositorios\2T_DDI_PRAC2\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT_MarkupCompile.lref
+C:\Users\josem\repositorios\2T_DDI_PRAC2\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\josem\repositorios\2T_DDI_PRAC2\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT.g.resources
+C:\Users\josem\repositorios\2T_DDI_PRAC2\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT.AssemblyInfoInputs.cache
+C:\Users\josem\repositorios\2T_DDI_PRAC2\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT.AssemblyInfo.cs
+C:\Users\josem\repositorios\2T_DDI_PRAC2\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT.csproj.CoreCompileInputs.cache
+C:\Users\josem\repositorios\2T_DDI_PRAC2\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT.dll
+C:\Users\josem\repositorios\2T_DDI_PRAC2\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT.pdb
+C:\Users\josem\repositorios\2T_DDI_PRAC2\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT.genruntimeconfig.cache
+C:\Users\josem\repositorios\2T_DDI_PRAC2\GestionFCT\Gestion FCT\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+C:\Users\josem\repositorios\2T_DDI_PRAC2\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT.csproj.CopyComplete
+C:\Users\Pedro\Desktop\2T_DDI_PRAC2-main\GestionFCT\Gestion FCT\bin\Debug\netcoreapp3.1\Gestion FCT.exe
+C:\Users\Pedro\Desktop\2T_DDI_PRAC2-main\GestionFCT\Gestion FCT\bin\Debug\netcoreapp3.1\Gestion FCT.deps.json
+C:\Users\Pedro\Desktop\2T_DDI_PRAC2-main\GestionFCT\Gestion FCT\bin\Debug\netcoreapp3.1\Gestion FCT.runtimeconfig.json
+C:\Users\Pedro\Desktop\2T_DDI_PRAC2-main\GestionFCT\Gestion FCT\bin\Debug\netcoreapp3.1\Gestion FCT.runtimeconfig.dev.json
+C:\Users\Pedro\Desktop\2T_DDI_PRAC2-main\GestionFCT\Gestion FCT\bin\Debug\netcoreapp3.1\Gestion FCT.dll
+C:\Users\Pedro\Desktop\2T_DDI_PRAC2-main\GestionFCT\Gestion FCT\bin\Debug\netcoreapp3.1\Gestion FCT.pdb
+C:\Users\Pedro\Desktop\2T_DDI_PRAC2-main\GestionFCT\Gestion FCT\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+C:\Users\Pedro\Desktop\2T_DDI_PRAC2-main\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT.csprojAssemblyReference.cache
+C:\Users\Pedro\Desktop\2T_DDI_PRAC2-main\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Pedro\Desktop\2T_DDI_PRAC2-main\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Pedro\Desktop\2T_DDI_PRAC2-main\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT_MarkupCompile.cache
+C:\Users\Pedro\Desktop\2T_DDI_PRAC2-main\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT_MarkupCompile.lref
+C:\Users\Pedro\Desktop\2T_DDI_PRAC2-main\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Pedro\Desktop\2T_DDI_PRAC2-main\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT.g.resources
+C:\Users\Pedro\Desktop\2T_DDI_PRAC2-main\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT.AssemblyInfoInputs.cache
+C:\Users\Pedro\Desktop\2T_DDI_PRAC2-main\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT.AssemblyInfo.cs
+C:\Users\Pedro\Desktop\2T_DDI_PRAC2-main\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\Desktop\2T_DDI_PRAC2-main\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT.csproj.CopyComplete
+C:\Users\Pedro\Desktop\2T_DDI_PRAC2-main\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT.dll
+C:\Users\Pedro\Desktop\2T_DDI_PRAC2-main\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT.pdb
+C:\Users\Pedro\Desktop\2T_DDI_PRAC2-main\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT.genruntimeconfig.cache
+D:\Escritorio\Grado\SEGUNDO\Interfaces\Evaluacion_2\PracticaGrupal\ProyGestionFCT\GestionFCT\Gestion FCT\bin\Debug\netcoreapp3.1\Gestion FCT.exe
+D:\Escritorio\Grado\SEGUNDO\Interfaces\Evaluacion_2\PracticaGrupal\ProyGestionFCT\GestionFCT\Gestion FCT\bin\Debug\netcoreapp3.1\Gestion FCT.deps.json
+D:\Escritorio\Grado\SEGUNDO\Interfaces\Evaluacion_2\PracticaGrupal\ProyGestionFCT\GestionFCT\Gestion FCT\bin\Debug\netcoreapp3.1\Gestion FCT.runtimeconfig.json
+D:\Escritorio\Grado\SEGUNDO\Interfaces\Evaluacion_2\PracticaGrupal\ProyGestionFCT\GestionFCT\Gestion FCT\bin\Debug\netcoreapp3.1\Gestion FCT.runtimeconfig.dev.json
+D:\Escritorio\Grado\SEGUNDO\Interfaces\Evaluacion_2\PracticaGrupal\ProyGestionFCT\GestionFCT\Gestion FCT\bin\Debug\netcoreapp3.1\Gestion FCT.dll
+D:\Escritorio\Grado\SEGUNDO\Interfaces\Evaluacion_2\PracticaGrupal\ProyGestionFCT\GestionFCT\Gestion FCT\bin\Debug\netcoreapp3.1\Gestion FCT.pdb
+D:\Escritorio\Grado\SEGUNDO\Interfaces\Evaluacion_2\PracticaGrupal\ProyGestionFCT\GestionFCT\Gestion FCT\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+D:\Escritorio\Grado\SEGUNDO\Interfaces\Evaluacion_2\PracticaGrupal\ProyGestionFCT\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT.csprojAssemblyReference.cache
+D:\Escritorio\Grado\SEGUNDO\Interfaces\Evaluacion_2\PracticaGrupal\ProyGestionFCT\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+D:\Escritorio\Grado\SEGUNDO\Interfaces\Evaluacion_2\PracticaGrupal\ProyGestionFCT\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\App.g.cs
+D:\Escritorio\Grado\SEGUNDO\Interfaces\Evaluacion_2\PracticaGrupal\ProyGestionFCT\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT_MarkupCompile.cache
+D:\Escritorio\Grado\SEGUNDO\Interfaces\Evaluacion_2\PracticaGrupal\ProyGestionFCT\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT_MarkupCompile.lref
+D:\Escritorio\Grado\SEGUNDO\Interfaces\Evaluacion_2\PracticaGrupal\ProyGestionFCT\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\MainWindow.baml
+D:\Escritorio\Grado\SEGUNDO\Interfaces\Evaluacion_2\PracticaGrupal\ProyGestionFCT\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT.g.resources
+D:\Escritorio\Grado\SEGUNDO\Interfaces\Evaluacion_2\PracticaGrupal\ProyGestionFCT\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT.AssemblyInfoInputs.cache
+D:\Escritorio\Grado\SEGUNDO\Interfaces\Evaluacion_2\PracticaGrupal\ProyGestionFCT\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT.AssemblyInfo.cs
+D:\Escritorio\Grado\SEGUNDO\Interfaces\Evaluacion_2\PracticaGrupal\ProyGestionFCT\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT.csproj.CoreCompileInputs.cache
+D:\Escritorio\Grado\SEGUNDO\Interfaces\Evaluacion_2\PracticaGrupal\ProyGestionFCT\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT.csproj.CopyComplete
+D:\Escritorio\Grado\SEGUNDO\Interfaces\Evaluacion_2\PracticaGrupal\ProyGestionFCT\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT.dll
+D:\Escritorio\Grado\SEGUNDO\Interfaces\Evaluacion_2\PracticaGrupal\ProyGestionFCT\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT.pdb
+D:\Escritorio\Grado\SEGUNDO\Interfaces\Evaluacion_2\PracticaGrupal\ProyGestionFCT\GestionFCT\Gestion FCT\obj\Debug\netcoreapp3.1\Gestion FCT.genruntimeconfig.cache

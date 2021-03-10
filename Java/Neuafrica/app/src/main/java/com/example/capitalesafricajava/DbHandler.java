@@ -20,7 +20,7 @@ public class DbHandler extends SQLiteOpenHelper
     }
 
     @Override
-    public void onCreate(SQLiteDatabase db){
+    public void onCreate(SQLiteDatabase db){ // Se crea la tabla
         String CREATE_TABLE = "CREATE TABLE " + TABLE_PAISES + "("
                 + KEY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
                 + KEY_PAIS + " TEXT,"
@@ -31,117 +31,117 @@ public class DbHandler extends SQLiteOpenHelper
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)
     {
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_PAISES);
-        onCreate(db);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_PAISES); // Elimina la antigua tabla si ya existe una creada
+        onCreate(db); // crea la tabla
     }
 
     public void resetear()
     {
-        SQLiteDatabase db = this.getWritableDatabase();
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_PAISES);
-        onCreate(db);
+        SQLiteDatabase db = this.getWritableDatabase(); // La base de datos se abre en modo lectura y escritura
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_PAISES); // Elimina la antigua tabla si ya existe una creada
+        onCreate(db); // crea la tabla
     }
 
-    void insertarPais(Pais pais)
+    void insertarPais(Pais pais) // Inserta un país completo: id, país y capital
     {
-        SQLiteDatabase db = this.getWritableDatabase();
+        SQLiteDatabase db = this.getWritableDatabase(); // La base de datos se abre en modo lectura y escritura
 
-        ContentValues cValues = new ContentValues();
-        cValues.put(KEY_ID, pais.getId());
-        cValues.put(KEY_PAIS, pais.getPais());
-        cValues.put(KEY_CAPITAL, pais.getCapital());
+        ContentValues cValues = new ContentValues(); // Contenedor de los valores del insert
+        cValues.put(KEY_ID, pais.getId()); // Pasamos id
+        cValues.put(KEY_PAIS, pais.getPais()); // Pasamos país
+        cValues.put(KEY_CAPITAL, pais.getCapital()); // Pasamos capital
 
-        db.insert(TABLE_PAISES,null, cValues);
-        db.close();
+        db.insert(TABLE_PAISES,null, cValues); // Inserta los datos que se le han pasado
+        db.close(); // Cierra la base de datos
     }
 
 
-    public Pais obtenerPaisPorID(int paisID)
+    public Pais obtenerPaisPorID(int paisID) // Selecciona de la tabla un país pasándole por parámetro el id del país
     {
-        Pais paisEncontrado = new Pais();
+        Pais paisEncontrado = new Pais(); // Objeto País
 
-            SQLiteDatabase db = this.getWritableDatabase();
-            Cursor cursor = db.query(TABLE_PAISES, new String[]{KEY_ID, KEY_PAIS, KEY_CAPITAL}, KEY_ID + "=?",new String[]{String.valueOf(paisID)},null, null, null, null);
+            SQLiteDatabase db = this.getWritableDatabase(); // La base de datos se abre en modo lectura y escritura
+            Cursor cursor = db.query(TABLE_PAISES, new String[]{KEY_ID, KEY_PAIS, KEY_CAPITAL}, KEY_ID + "=?",new String[]{String.valueOf(paisID)},null, null, null, null); // Se almacena la consulta en un cursor
 
 
-            if (cursor.moveToFirst())
+            if (cursor.moveToFirst()) // Mueve el cursor a la primera fila y comprueba si está vacío o no
             {
                 cursor.moveToFirst();
 
-                paisEncontrado.setId(cursor.getInt(0));
-                paisEncontrado.setPais(cursor.getString(1));
-                paisEncontrado.setCapital(cursor.getString(2));
+                paisEncontrado.setId(cursor.getInt(0)); // obtiene el id
+                paisEncontrado.setPais(cursor.getString(1)); //  obtiene el país
+                paisEncontrado.setCapital(cursor.getString(2)); // obtiene la capital
             }
                 else
                 {
-                    paisEncontrado.setPais("error");
+                    paisEncontrado.setPais("error"); // Devuelve error en el país
                 }
 
-            cursor.close();
-            db.close();
+            cursor.close(); // Se cierra el cursor
+            db.close(); // Se cierra la base de datos
 
-        return paisEncontrado;
+        return paisEncontrado; // Devuelve el país
     }
 
-    public Pais obtenerPaisPorNombre(String paisNombre)
+    public Pais obtenerPaisPorNombre(String paisNombre) // Selecciona de la tabla un país pasándole por parámetro el nombre del país
     {
-        Pais paisEncontrado = new Pais();
+        Pais paisEncontrado = new Pais(); // Objeto país
 
-        if(paisNombre != null)
+        if(paisNombre != null) // Si el nombre del país no es nulo
         {
-            SQLiteDatabase db = this.getWritableDatabase();
-            Cursor cursor = db.query(TABLE_PAISES, new String[]{KEY_ID, KEY_PAIS, KEY_CAPITAL}, KEY_PAIS + "=?",new String[]{paisNombre},null, null, null, null);
+            SQLiteDatabase db = this.getWritableDatabase(); // La base de datos se abre en modo lectura y escritura
+            Cursor cursor = db.query(TABLE_PAISES, new String[]{KEY_ID, KEY_PAIS, KEY_CAPITAL}, KEY_PAIS + "=?",new String[]{paisNombre},null, null, null, null); // Se almacena la consulta en un cursor
 
-            if (cursor.moveToFirst())
+            if (cursor.moveToFirst()) // Mueve el cursor a la primera fila y comprueba si está vacío o no
             {
                 cursor.moveToFirst();
 
-                paisEncontrado.setId(cursor.getInt(0));
-                paisEncontrado.setPais(cursor.getString(1));
-                paisEncontrado.setCapital(cursor.getString(2));
+                paisEncontrado.setId(cursor.getInt(0)); // Obtiene el id
+                paisEncontrado.setPais(cursor.getString(1)); // Obtiene el país
+                paisEncontrado.setCapital(cursor.getString(2)); // Obtiene la capital
             }
 
-            cursor.close();
-            db.close();
+            cursor.close(); // Se cierra el cursor
+            db.close(); // Se cierra la base de datos
         }
 
-        return paisEncontrado;
+        return paisEncontrado; // Devuelve el país
     }
 
-    public int obtenerTamano()
+    public int obtenerTamano() // Obtiene el tamaño de la base de datos
     {
-        int tamano = 0;
+        int tamano = 0; // Se inicializa la variable tamaño a 0
 
-        SQLiteDatabase db = this.getWritableDatabase();
-        String query = "SELECT * FROM " + TABLE_PAISES;
-        Cursor cursor = db.rawQuery(query, null);
+        SQLiteDatabase db = this.getWritableDatabase(); // La base de datos se abre en modo lectura y escritura
+        String query = "SELECT * FROM " + TABLE_PAISES; // sentencia sql
+        Cursor cursor = db.rawQuery(query, null); // Se almacena la consulta en un cursor
 
-        while(cursor.moveToNext())
+        while(cursor.moveToNext()) // Mientras hayan datos
         {
-            tamano++;
+            tamano++; // La variable tamaño aumenta su valor en 1
         }
 
-        cursor.close();
-        db.close();
+        cursor.close(); // Se cierra el cursor
+        db.close(); // Se cierra la base de datos
 
-        return tamano;
+        return tamano; // Devuelve el tamaño
     }
 
-    public void eliminarPais(String pais)
+    public void eliminarPais(String pais) // Elimina de la tabla un país pasándole por parámetro el id del país
     {
-        if(pais != null)
+        if(pais != null) // Si no es nulo
         {
-            SQLiteDatabase db = this.getWritableDatabase();
-            Cursor cursor = db.query(TABLE_PAISES, new String[]{KEY_ID, KEY_PAIS, KEY_CAPITAL}, KEY_PAIS + "=?",new String[]{pais},null, null, null, null);
+            SQLiteDatabase db = this.getWritableDatabase(); // La base de datos se abre en modo lectura y escritura
+            Cursor cursor = db.query(TABLE_PAISES, new String[]{KEY_ID, KEY_PAIS, KEY_CAPITAL}, KEY_PAIS + "=?",new String[]{pais},null, null, null, null); // Se muestran los datos de la tabla y se almacenan en un cursor
 
-            if(cursor.moveToFirst())
+            if(cursor.moveToFirst()) // Mueve el cursor a la primera fila y comprueba si está vacío o no
             {
-                int id = Integer.parseInt(cursor.getString(0));
-                db.delete(TABLE_PAISES, KEY_ID + " = ?",new String[]{String.valueOf(id)});
+                int id = Integer.parseInt(cursor.getString(0)); // Obtiene el id
+                db.delete(TABLE_PAISES, KEY_ID + " = ?",new String[]{String.valueOf(id)}); // Elimina el país de la tabla
             }
 
-            cursor.close();
-            db.close();
+            cursor.close(); // Se cierra el cursor
+            db.close(); // Se cierra la base de datos
         }
 
     }

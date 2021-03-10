@@ -1,20 +1,21 @@
 package com.example.capitalesafricajava;
 
-public class Pais
+public class Pais // Clase país
 {
-    private int id;
-    private String pais;
-    private String capital;
+    private int id; // Atributo id
+    private String pais; // Atributo país
+    private String capital; // Atributo capital
 
-    public Pais(int id, String pais, String capital) {
+    public Pais(int id, String pais, String capital) { // Constructor con el id, país y capital
         this.id = id;
         this.pais = pais;
         this.capital = capital;
     }
 
-    public Pais() {
+    public Pais() { // Constructor vacío
     }
 
+    // Getter y setter
     public int getId() {
         return id;
     }

@@ -19,13 +19,16 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity
 {
+    // Se declaran los HashMap
     HashMap<String, String> paises = new HashMap<String, String>();
     HashMap<String, String> opciones = new HashMap<String, String>();
 
+    // Se crean dos bases de datos, una para países y otra para opciones
     DbHandler dbHandlerPaises = new DbHandler(MainActivity.this,"capitalesAfricaPaises",1);
     DbHandler dbHandlerOpciones = new DbHandler(MainActivity.this,"capitalesAfricaOpciones",1);
-    Random random = new Random();
+    Random random = new Random(); // Random
 
+    // Elementos gráficos
     ImageButton btnEmpezar;
     Button btnCambiarActividad;
     RadioGroup radioButtonGroup;
@@ -48,59 +51,59 @@ public class MainActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        iniciarElementosGraficos();
-        iniciarBaseDatos();
+        iniciarElementosGraficos(); // Método que inicia los elementos gráficos
+        iniciarBaseDatos(); // Método que inicia la base de datos
 
-        btnEmpezar.setOnClickListener(new View.OnClickListener()
+        btnEmpezar.setOnClickListener(new View.OnClickListener() // Acciones cuando se pulsa el botón empezar
         {
             @Override
-            public void onClick(View v)
+            public void onClick(View v) // Al hacer clic
             {
                 try
                 {
-                    jugar();
+                    jugar(); // Método que inicia el juego
                 }
                     catch (Exception e)
                     {
-                        if(dbHandlerPaises.obtenerTamano() > 0)
+                        if(dbHandlerPaises.obtenerTamano() > 0) // Controla que si el usuario no hace ninguna acción antes de pulsar el botón de  mostrar país, el contador siga sumando y continúe el juego mientras hayan países que mostrar
                         {
-                            intentos++;
-                            fallos++;
-                            siguiente();
+                            intentos++; // Intentos aumenta su valor en 1
+                            fallos++; // Fallos aumenta su valor en 1
+                            siguiente(); // Método que controla que el juego continúe
                         }
                     }
             }
         });
 
-        btnCambiarActividad.setOnClickListener(new View.OnClickListener()
+        btnCambiarActividad.setOnClickListener(new View.OnClickListener() // Acciones del botón ver resultados
         {
             @Override
             public void onClick(View v)
             {
-                Log.v(":::","Has pulsado el boton ver resultados");
-                Resultado resultado = new Resultado(intentos,aciertos,fallos);
-                Intent intent = new Intent(MainActivity.this, Resultados.class);
-                intent.putExtra("valoresResultado", resultado);
-                startActivity(intent);
+                Log.v(":::","Has pulsado el boton ver resultados"); // Log que indica que se ha pulsado el botón ver resultados
+                Resultado resultado = new Resultado(intentos,aciertos,fallos); // Objeto que pasa valor de intentos, aciertos y fallos
+                Intent intent = new Intent(MainActivity.this, Resultados.class); // Intent que hace que pasemos de mainactivity a Resultados
+                intent.putExtra("valoresResultado", resultado); // Le pasa el objeto
+                startActivity(intent); // Se inicia la activity
             }
         });
     }
 
-    public void jugar()
+    public void jugar() // Método que inicia el juego
     {
-        if (!comienzo)
+        if (!comienzo) // Si comienzo es true
         {
-            iniciarJuego();
+            iniciarJuego(); // Inicia el juego y hace visible el país y los radiobutton con las opciones de capitales
         }
-        else
+        else // Si comienzo es false
         {
             int eleccion = radioButtonGroup.getCheckedRadioButtonId();
-            RadioButton radioElegido = findViewById(eleccion);
+            RadioButton radioElegido = findViewById(eleccion); // Se almacena el radiobutton elegido del radiobuttongroup
 
-            if(radioElegido.getText().equals(dbHandlerPaises.obtenerPaisPorNombre(paisActual).getCapital())) //Posible problema nulo
+            if(radioElegido.getText().equals(dbHandlerPaises.obtenerPaisPorNombre(paisActual).getCapital())) //Comprueba si la capital seleccionada en el radiobutton es la que le corresponde al país
             {
-                intentos++;
-                aciertos++;
+                intentos++; // Aumenta el valor de intentos
+                aciertos++; // Aumenta el valor de aciertos
             }
                 else
                 {
@@ -109,49 +112,50 @@ public class MainActivity extends AppCompatActivity
                 }
         }
 
-        radioButtonGroup.clearCheck();
-        siguiente();
+        radioButtonGroup.clearCheck(); // Limpia la selección del grupo de radiobutton
+        siguiente(); // Método que controla que el juego continúe
     }
 
-    public void siguiente()
+    public void siguiente() // Método que controla que el juego continúe
     {
-        if(dbHandlerPaises.obtenerTamano() <= 1)
+        if(dbHandlerPaises.obtenerTamano() <= 1) // Si no hay pasíses en la bbdd dbHandlerPaíses
         {
-            btnCambiarActividad.setVisibility(View.VISIBLE);
-            btnEmpezar.setVisibility(View.INVISIBLE);
-            radioButtonGroup.setVisibility(View.INVISIBLE);
-            txtPais.setVisibility(View.INVISIBLE);
-            buttonText.setVisibility(View.INVISIBLE);
-            textView.setText("Fin del juego");
+            btnCambiarActividad.setVisibility(View.VISIBLE); // Hace visible el botón de ver resultados que pasa al otro activitu para ver resultados
+            btnEmpezar.setVisibility(View.INVISIBLE); // Hace invisible el botón empezar
+            radioButtonGroup.setVisibility(View.INVISIBLE); // Hace invisible el grupo de radiobutton
+            txtPais.setVisibility(View.INVISIBLE); // Hace invisible el país
+            buttonText.setVisibility(View.INVISIBLE); // Hace invisible el texto de "Pulse para empezar"
+            textView.setText("Fin del juego"); // Aparece un mensaje de "Fin del juego"
         }
-            else
+            else // Si siguien habiendo países en la bbdd dbHandlerPaises
             {
-                dbHandlerPaises.eliminarPais(paisActual);
-                int id = random.nextInt(54 - 1 + 1) + 1;
-                String intentoPais = dbHandlerPaises.obtenerPaisPorID(id).getPais();
+                dbHandlerPaises.eliminarPais(paisActual); // Se elimina el país de la bbdd dbHandlerPaises
+                int id = random.nextInt(54 - 1 + 1) + 1; // Id random
+                String intentoPais = dbHandlerPaises.obtenerPaisPorID(id).getPais(); //Se obtiene el país con el id random
 
-                while(intentoPais.equals("error"))
+                while(intentoPais.equals("error")) // Si no hay país con ese id porque ya se haya jugado
                 {
-                    id = random.nextInt(54 - 1 + 1) + 1;
-                    intentoPais = dbHandlerPaises.obtenerPaisPorID(id).getPais();
+                    id = random.nextInt(54 - 1 + 1) + 1; // Vuelve a obtener un número random
+                    intentoPais = dbHandlerPaises.obtenerPaisPorID(id).getPais(); // Vuelve a obtener el país con el id random
                 }
 
-                paisActual = dbHandlerPaises.obtenerPaisPorID(id).getPais();
-                txtPais.setText(paisActual);
-                prepararOpciones();
+                paisActual = dbHandlerPaises.obtenerPaisPorID(id).getPais(); // Obtiene un nuevo país
+                txtPais.setText(paisActual); // Muestra el nuevo país
+                prepararOpciones(); // Método que hace que se muestren 4 opciones de capitales
             }
     }
 
     public void prepararOpciones()
     {
-        radioButton1.setText(dbHandlerOpciones.obtenerPaisPorID(random.nextInt(54 - 1 + 1) + 1).getCapital());
-        radioButton2.setText(dbHandlerOpciones.obtenerPaisPorID(random.nextInt(54 - 1 + 1) + 1).getCapital());
-        radioButton3.setText(dbHandlerOpciones.obtenerPaisPorID(random.nextInt(54 - 1 + 1) + 1).getCapital());
-        radioButton4.setText(dbHandlerOpciones.obtenerPaisPorID(random.nextInt(54 - 1 + 1) + 1).getCapital());
+        radioButton1.setText(dbHandlerOpciones.obtenerPaisPorID(random.nextInt(54 - 1 + 1) + 1).getCapital()); // Muestra una capital random de las capitales almacenadas en dbHandlerOpciones
+        radioButton2.setText(dbHandlerOpciones.obtenerPaisPorID(random.nextInt(54 - 1 + 1) + 1).getCapital()); // Muestra una capital random de las capitales almacenadas en dbHandlerOpciones
+        radioButton3.setText(dbHandlerOpciones.obtenerPaisPorID(random.nextInt(54 - 1 + 1) + 1).getCapital()); // Muestra una capital random de las capitales almacenadas en dbHandlerOpciones
+        radioButton4.setText(dbHandlerOpciones.obtenerPaisPorID(random.nextInt(54 - 1 + 1) + 1).getCapital()); // Muestra una capital random de las capitales almacenadas en dbHandlerOpciones
 
-        String respuestaCorrecta = dbHandlerPaises.obtenerPaisPorNombre(paisActual).getCapital();
-        Log.v(":::","Respuesta correcta : " + respuestaCorrecta);
+        String respuestaCorrecta = dbHandlerPaises.obtenerPaisPorNombre(paisActual).getCapital(); // Almacena en una variable la capital correcta del país que se mostrará
+        Log.v(":::","Respuesta correcta : " + respuestaCorrecta); // Log con la respuesta correcta
 
+        // Entrará en el método prepararOpciones hasta que los radiobutton no se repitan entre si, no sean nulos, y alguno de ellos contenga la capital correcta del país que se muestra
         if( (!radioButton1.getText().equals(respuestaCorrecta)  && !radioButton2.getText().equals(respuestaCorrecta)  && !radioButton3.getText().equals(respuestaCorrecta)  && !radioButton4.getText().equals(respuestaCorrecta)) || (radioButton1.getText().equals(radioButton2.getText()) || radioButton1.getText().equals(radioButton3.getText()) || radioButton1.getText().equals(radioButton4.getText()) || radioButton2.getText().equals(radioButton3.getText()) || radioButton2.getText().equals(radioButton4.getText()) || radioButton3.getText().equals(radioButton4.getText()) ) || (radioButton1.getText() == null || radioButton2.getText() == null || radioButton3.getText() == null || radioButton4.getText() == null) || (radioButton1.getText() == "null" || radioButton2.getText() == "null" || radioButton3.getText() == "null" || radioButton4.getText() == "null") )
         {
             prepararOpciones();
@@ -160,13 +164,13 @@ public class MainActivity extends AppCompatActivity
 
     public void iniciarJuego()
     {
-        buttonText.setText("Mostrar otro País");
-        txtPais.setVisibility(View.VISIBLE);
-        radioButtonGroup.setVisibility(View.VISIBLE);
-        comienzo = true;
+        buttonText.setText("Mostrar otro País"); // Muestra el texto "Mostrar otro país"
+        txtPais.setVisibility(View.VISIBLE); // Hace visible el país
+        radioButtonGroup.setVisibility(View.VISIBLE); // Hace visible el grupo de radiobutton con las capitales
+        comienzo = true; // Da valor true a la booleana comienzo
     }
 
-    public void iniciarElementosGraficos()
+    public void iniciarElementosGraficos() // Se inician los elementos gráficos
     {
         btnEmpezar = (ImageButton) findViewById(R.id.btnEmpezar);
         btnCambiarActividad = (Button) findViewById(R.id.btnCambiarActividad);
@@ -182,6 +186,7 @@ public class MainActivity extends AppCompatActivity
 
     public void iniciarBaseDatos()
     {
+        // Se almacenan los países y capitales en el hashmap países
         paises.put("Angola", "Luanda");
         paises.put("Argelia", "Argel");
         paises.put("Benin", "Porto Novo");
@@ -237,6 +242,7 @@ public class MainActivity extends AppCompatActivity
         paises.put("Zambia", "Lusaka");
         paises.put("Zimbabue", "Harare");
 
+        // Se almacenan los países y capitales en el hashmap opciones
         opciones.put("Angola", "Luanda");
         opciones.put("Argelia", "Argel");
         opciones.put("Benin", "Porto Novo");
@@ -294,17 +300,17 @@ public class MainActivity extends AppCompatActivity
 
         int indice = 1;
 
-        dbHandlerPaises.resetear();
-        dbHandlerOpciones.resetear();
+        dbHandlerPaises.resetear(); // Se resetea la base de datos países para que vuelva a coger todos los países
+        dbHandlerOpciones.resetear(); // Se resetea la base de datos opciones para que vuelva a coger todos los países
 
         for (Map.Entry<String, String> pair: paises.entrySet()) {
-            dbHandlerPaises.insertarPais(new Pais(indice, pair.getKey(), pair.getValue()));
+            dbHandlerPaises.insertarPais(new Pais(indice, pair.getKey(), pair.getValue())); // Inserta en la base de datos países
             indice++;
         }
 
         indice = 1;
         for (Map.Entry<String, String> pair: opciones.entrySet()) {
-            dbHandlerOpciones.insertarPais(new Pais(indice, pair.getKey(), pair.getValue()));
+            dbHandlerOpciones.insertarPais(new Pais(indice, pair.getKey(), pair.getValue())); // Inserta en la base de datos opciones
             indice++;
         }
     }
