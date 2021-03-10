@@ -11,6 +11,8 @@ Repositorio donde encontraras todos los proyectos realizados por Pedro José Rod
 	- Visor Cuentas : Aplicación que nos permite recorrer bidireccionalmente datos y modificarlos (usando WPF y MySQL).
 	
 	- Financiero : Aplicación que nos permite crear datos bancarios dependiendo de que tipo del tipo de tarjeta y banco (usando XAML).
+	
+	- GestionFCT : Aplicación que nos permite gestionar una base de datos de un centro (usando XAML, y MariaDB), además de pruebas unitarias usando xUnit.
 
 
 
@@ -45,3 +47,5 @@ Repositorio donde encontraras todos los proyectos realizados por Pedro José Rod
 	- Brute Force : Aplicación que nos permite averiguar una contraseña por medio de combinaciones de caracteres aleatorios sin repetir las combinaciones.
 	
 	- Telebot_IGCrawler : BOT de telegram que esperará a recibir un perfil de Instagram y te enviará un PDF con datos obtenidos del perfil (usando Telebot, reportlab, BeautifulSoup y requests).
+	
+	- Gestion Hospital : Aplicación que nos permite gestionar una base de datos de un hospital (usando MariaDB y Tkinter).
