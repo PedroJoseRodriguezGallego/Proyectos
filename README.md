@@ -1,5 +1,5 @@
 # Proyectos
-Repositorio donde encontraras todos los proyectos realizados por Pedro José Rodríguez Gallego, tanto de forma académica como personal.
+Repositorio con todos los proyectos realizados por Pedro José Rodríguez Gallego academica y personalmente.
 
 
 --> C#
