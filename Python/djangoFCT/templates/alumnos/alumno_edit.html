@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Alumnos | Editar
+{% endblock %}
+
+{% block content %}
+    <h2>Datos del alumno</h2>
+    <form method="POST" class="elemento-form">{% csrf_token %}
+        <div class="divFormulario">
+            {{ form.as_p }}
+        </div>
+        <button type="submit" class="btn btn-outline-success">GUARDAR</button>
+        <button type="reset" class="btn btn-outline-warning">RESETEAR</button>
+        <a href="{% url 'alumnos_list' %}"><button type="button" class="btn btn-outline-danger">CANCELAR</button></a>
+    </form>
+{% endblock %}
+
+{% block pie %}
+    Autores: Guillermo Morata Romero y Pedro Jose Rodriguez Gallego
+{% endblock %}
+
+{% block imagenInicio %}
+    <span class="helper"></span> <img src="{% static "images/safa_small.png" %}" alt="My image"/>
+{% endblock %}

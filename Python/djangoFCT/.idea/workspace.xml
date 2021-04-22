@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c54b34ba-51b0-4cdb-9c83-e00a1e8e74c5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asignados/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/asignados/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reporte.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/alumnos/alumno_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/alumnos/alumno_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/alumnos/alumno_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/alumnos/alumno_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/alumnos/alumno_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/alumnos/alumno_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/asignados/asignado_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/asignados/asignado_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/asignados/asignado_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/asignados/asignado_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/asignados/asignado_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/asignados/asignado_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/asignados/informeAsignado_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/asignados/informeAsignado_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/asignados/informeAsignado_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/asignados/informeAsignado_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cuentas/loggin.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cuentas/loggin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cuentas/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cuentas/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/empresas/empresa_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/empresas/empresa_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/empresas/empresa_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/empresas/empresa_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/empresas/empresa_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/empresas/empresa_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tutoresDocentes/tutorDocente_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tutoresDocentes/tutorDocente_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tutoresDocentes/tutorDocente_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tutoresDocentes/tutorDocente_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tutoresDocentes/tutorDocente_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tutoresDocentes/tutorDocente_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validador.py" beforeDir="false" afterPath="$PROJECT_DIR$/validador.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1pwBuGD05rKOSpRh5h7nqL49qN0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Pedro\Desktop\GIT_2021_PCSD1_FCT_DJANGO\2021_PCSD1_FCT_DJANGO\djangoFCT\templates" />
+      <recent name="C:\Users\Pedro\Desktop\GIT_2021_PCSD1_FCT_DJANGO\2021_PCSD1_FCT_DJANGO\djangoFCT\cuentas" />
+      <recent name="C:\Users\Pedro\Desktop\GIT_2021_PCSD1_FCT_DJANGO\2021_PCSD1_FCT_DJANGO\djangoFCT\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Pedro\Desktop\GIT_2021_PCSD1_FCT_DJANGO\2021_PCSD1_FCT_DJANGO\djangoFCT" />
+      <recent name="C:\Users\Pedro\Desktop\GIT_2021_PCSD1_FCT_DJANGO\2021_PCSD1_FCT_DJANGO\djangoFCT\djangoFCT\static\images" />
+      <recent name="C:\Users\Pedro\Desktop\GIT_2021_PCSD1_FCT_DJANGO\2021_PCSD1_FCT_DJANGO\djangoFCT\djangoFCT" />
+      <recent name="C:\Users\Pedro\Desktop\GIT_2021_PCSD1_FCT_DJANGO\2021_PCSD1_FCT_DJANGO\djangoFCT\templates" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.validador">
+    <configuration name="reporte.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/djangoFCT/reporte.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="validador" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="djangoFCT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/validador.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="djangoFCT" type="Python.DjangoServer" factoryName="Django server">
+      <module name="djangoFCT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.validador" />
+        <item itemvalue="JavaScript Debug.reporte.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c54b34ba-51b0-4cdb-9c83-e00a1e8e74c5" name="Default Changelist" comment="" />
+      <created>1616084492487</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616084492487</updated>
+      <workItem from="1616084494401" duration="12000" />
+      <workItem from="1616428915899" duration="5875000" />
+      <workItem from="1616434924097" duration="816000" />
+      <workItem from="1616515664828" duration="6669000" />
+      <workItem from="1616536472840" duration="199000" />
+      <workItem from="1616572976763" duration="80000" />
+      <workItem from="1616601995376" duration="4417000" />
+      <workItem from="1616659513560" duration="115000" />
+      <workItem from="1616924282009" duration="2991000" />
+      <workItem from="1616927513715" duration="2420000" />
+      <workItem from="1616966629946" duration="4332000" />
+      <workItem from="1617008193952" duration="7569000" />
+      <workItem from="1617267375598" duration="7388000" />
+      <workItem from="1617606060773" duration="360000" />
+      <workItem from="1617632938630" duration="601000" />
+      <workItem from="1617633577477" duration="4449000" />
+      <workItem from="1617639056645" duration="84000" />
+      <workItem from="1617702567831" duration="7239000" />
+      <workItem from="1617719147673" duration="1961000" />
+      <workItem from="1617726055110" duration="133000" />
+      <workItem from="1617731324144" duration="148000" />
+      <workItem from="1617775051949" duration="2087000" />
+      <workItem from="1617873969362" duration="131000" />
+      <workItem from="1617874125550" duration="884000" />
+      <workItem from="1617875916809" duration="2580000" />
+      <workItem from="1617885760583" duration="5307000" />
+      <workItem from="1617894290041" duration="1221000" />
+      <workItem from="1617902118193" duration="2078000" />
+      <workItem from="1617959223216" duration="8947000" />
+      <workItem from="1617972848988" duration="35000" />
+      <workItem from="1618212800734" duration="779000" />
+      <workItem from="1618236970191" duration="7072000" />
+      <workItem from="1618392177675" duration="6696000" />
+      <workItem from="1618410829944" duration="3986000" />
+      <workItem from="1618415331924" duration="1490000" />
+      <workItem from="1618418560568" duration="213000" />
+      <workItem from="1618470248787" duration="534000" />
+      <workItem from="1618478538948" duration="2501000" />
+      <workItem from="1618656859853" duration="40000" />
+      <workItem from="1618817430343" duration="1671000" />
+      <workItem from="1618820001383" duration="192000" />
+      <workItem from="1618820217066" duration="55000" />
+      <workItem from="1618823691495" duration="1443000" />
+      <workItem from="1618825213355" duration="649000" />
+      <workItem from="1618827205341" duration="187000" />
+      <workItem from="1618827527380" duration="4378000" />
+      <workItem from="1618841774448" duration="7632000" />
+      <workItem from="1618909986874" duration="886000" />
+      <workItem from="1618912287038" duration="9225000" />
+      <workItem from="1618929392177" duration="256000" />
+      <workItem from="1618929686454" duration="406000" />
+      <workItem from="1618930114394" duration="432000" />
+      <workItem from="1618930677971" duration="3642000" />
+      <workItem from="1618940191039" duration="1680000" />
+      <workItem from="1618953693366" duration="6858000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/djangoFCT$validador.coverage" NAME="validador Coverage Results" MODIFIED="1618958528038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

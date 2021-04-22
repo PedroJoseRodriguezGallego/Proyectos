@@ -46,6 +46,8 @@ Repositorio donde encontraras todos los proyectos realizados por Pedro José Rod
 	
 	- Brute Force : Aplicación que nos permite averiguar una contraseña por medio de combinaciones de caracteres aleatorios sin repetir las combinaciones.
 	
-	- Telebot_IGCrawler : BOT de telegram que esperará a recibir un perfil de Instagram y te enviará un PDF con datos obtenidos del perfil (usando Telebot, reportlab, BeautifulSoup y requests).
+	- TelegramBOT : BOT de telegram que realiza diversas funciones de scraping y manejo de datos online (usando Telebot, PyTube, YoutubeDL, PyDub, BeautifulSoup y Selenium).
 	
 	- Gestion Hospital : Aplicación que nos permite gestionar una base de datos de un hospital (usando MariaDB y Tkinter).
+	
+	- DjangoFCT : *Aplicación con el framework Django en la que gestionamos una institucion de educacion.*

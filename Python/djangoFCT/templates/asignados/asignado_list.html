@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    Asignados
+{% endblock %}
+
+
+{% block content %}
+
+    {% if asignados %}
+        {% for asignado in asignados %}
+            <div class="elemento">
+                <h2><a href="{% url 'asignado_detail' pk=asignado.pk %}">{{ asignado.alumno }}</a></h2>
+                <p>{{ asignado.empresa }}</p>
+            </div>
+        {% endfor %}
+    {% else %}
+        <h2 class="noElement">No hay ningún asignado registrado</h2>
+    {% endif %}
+
+    <a href="{% url 'asignado_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+    <a style="margin-left: 15px;" href="{% url 'informeAsignados_new' %}" class="top-menu"><span class="bi bi-journal-text"></span></a>
+    <h4><a href="{% url 'index' %}">Volver al inicio</a></h4>
+{% endblock %}
+
+{% block pie %}
+    Autores: Guillermo Morata Romero y Pedro Jose Rodriguez Gallego
+{% endblock %}
+
+{% block imagenInicio %}
+    <span class="helper"></span> <img src="{% static "images/safa_small.png" %}" alt="My image"/>
+{% endblock %}

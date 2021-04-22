@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load auth_extras %}
+
+{% block title %}
+    Alumnos | Detalle
+{% endblock %}
+
+{% block content %}
+    <div class="elemento">
+    {% if request.user|has_group:"tutores" %}
+        <a class="btn btn-default" href="{% url 'alumno_edit' pk=alumno.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        <a class="btn btn-default" href="{% url 'alumno_delete' pk=alumno.pk %}"><span class="glyphicon glyphicon-minus"></span></a>
+    {% endif %}
+        <h2>Alumno : {{ alumno.nombre }} {{ alumno.apellidos }}</h2>
+        <ul>
+            <li> <label class="nombreCampo"> Nombre y apellidos </label> {{ alumno.nombre }} {{ alumno.apellidos }}</li>
+            <li> <label class="nombreCampo"> DNI </label> {{ alumno.dni }}</li>
+            <li> <label class="nombreCampo"> Fecha de Nacimiento </label> {{ alumno.fechaFormateada }}</li>
+        </ul>
+    </div>
+    <h4><a href="{% url 'alumnos_list' %}">Volver atrás</a></h4>
+{% endblock %}
+
+{% block pie %}
+    Autores: Guillermo Morata Romero y Pedro Jose Rodriguez Gallego
+{% endblock %}
+
+{% block imagenInicio %}
+    <span class="helper"></span> <img src="{% static "images/safa_small.png" %}" alt="My image"/>
+{% endblock %}

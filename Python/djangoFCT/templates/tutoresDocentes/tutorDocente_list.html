@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load auth_extras %}
+
+
+{% block title %}
+    Tutores
+{% endblock %}
+
+
+{% block content %}
+
+    {% if tutoresDocentes %}
+        {% for tutorDocente in tutoresDocentes %}
+        <div class="elemento">
+            <h2><a href="{% url 'tutorDocente_detail' pk=tutorDocente.pk %}">{{ tutorDocente.nombreApellido }}</a></h2>
+            <p>{{ tutorDocente.email }}</p>
+        </div>
+    {% endfor %}
+    {% else %}
+        <h2 class="noElement">No hay ningún tutor docente registrado</h2>
+    {% endif %}
+
+    {% if request.user|has_group:"tutores" %}
+        <a href="{% url 'tutorDocente_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+    {% endif %}
+    <h4><a href="{% url 'index' %}">Volver al inicio</a></h4>
+{% endblock %}
+
+{% block pie %}
+    Autores: Guillermo Morata Romero y Pedro Jose Rodriguez Gallego
+{% endblock %}
+
+{% block imagenInicio %}
+    <span class="helper"></span> <img src="{% static "images/safa_small.png" %}" alt="My image"/>
+{% endblock %}

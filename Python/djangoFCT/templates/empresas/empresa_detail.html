@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load auth_extras %}
+
+{% block title %}
+    Empresas | Detalle
+{% endblock %}
+
+{% block content %}
+    <div class="elemento">
+    {% if request.user|has_group:"tutores" %}
+        <a class="btn btn-default" href="{% url 'empresa_edit' pk=empresa.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        <a class="btn btn-default" href="{% url 'empresa_delete' pk=empresa.pk %}"><span class="glyphicon glyphicon-minus"></span></a>
+    {% endif %}
+        <h2>Empresa : {{ empresa.nombre }}</h2>
+        <ul>
+            <li> <label class="nombreCampo"> Nombre </label> {{ empresa.nombre }} </li>
+            <li> <label class="nombreCampo"> CIF </label> {{ empresa.cif }} </li>
+            <li> <label class="nombreCampo"> Tipo de jornada </label> {{ empresa.tipoJornada }} </li>
+            <li> <label class="nombreCampo"> Dirección </label> {{ empresa.direccion }} </li>
+            <li> <label class="nombreCampo"> Código Postal </label> {{ empresa.cp }} </li>
+            <li> <label class="nombreCampo"> Localidad </label> {{ empresa.localidad }} </li>
+            <li>
+                <ul>
+                    <span class="nombreCampo"> Responsable </span>
+                    <li> <label class="nombreCampo"> Nombre y apellidos </label> {{ empresa.nombreResponsable }} {{ empresa.apellidosResponsable }}</li>
+                    <li> <label class="nombreCampo"> DNI </label> {{ empresa.dniResponsable }} </li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <span class="nombreCampo"> Tutor laboral </span>
+                    <li> <label class="nombreCampo"> Nombre y apellidos </label> {{ empresa.nombreTutorLaboral }} {{ empresa.apellidosTutorLaboral }}</li>
+                    <li> <label class="nombreCampo"> DNI </label> {{ empresa.dniTutorLaboral }} </li>
+                    <li> <label class="nombreCampo"> Email </label> {{ empresa.emailTutorLaboral }} </li>
+                    <li> <label class="nombreCampo"> Teléfono </label> {{ empresa.telefonoTutorLaboral }} </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <h4><a href="{% url 'empresas_list' %}">Volver atrás</a></h4>
+{% endblock %}
+
+{% block pie %}
+    Autores: Guillermo Morata Romero y Pedro Jose Rodriguez Gallego
+{% endblock %}
+
+{% block imagenInicio %}
+    <span class="helper"></span> <img src="{% static "images/safa_small.png" %}" alt="My image"/>
+{% endblock %}

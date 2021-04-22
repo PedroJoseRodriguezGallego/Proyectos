@@ -1,0 +1,143 @@
+.page-header
+{
+    background-color: #1A208A;
+    margin-top: 0;
+    padding: 35px 20px 20px 40px;
+}
+
+.page-header h1, .page-header h1 a
+{
+    color: #ffffff;
+    font-size: 56px;
+    text-decoration: none;
+}
+
+.content
+{
+    margin-left: 40px;
+}
+
+.elemento-form input
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.top-menu
+{
+    color: #ffffff;
+    float: right;
+    font-size: 56px;
+    margin-right: 20px;
+    margin-top: -75px;
+}
+
+<!-- -->
+
+.elemento
+{
+    margin-bottom: 70px;
+}
+
+.elementoIndice
+{
+    background-color: #2F38D4;
+    border-radius: 10px;
+    text-align: center;
+    height: 180px;
+    margin-top: 80px;
+    margin-right: -50%;
+    margin-left: 500px;
+}
+
+.divFormulario
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.nombreCampo
+{
+    font-weight: 500;
+}
+
+.spanInicio
+{
+    font-size: 48px;
+    position: relative;
+    top: 55px;
+    color: white;
+}
+
+.noElement
+{
+    margin-bottom: 30px;
+}
+
+.elemento h2 a, .elemento h2 a:visited
+{
+    color: #000000;
+}
+
+<!-- -->
+
+h2
+{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+a:link
+{
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+form
+{
+    margin-bottom: 25px;
+}
+
+p
+{
+    font-size: 21px;
+}
+
+ul
+{
+    margin-top: 20px;
+}
+
+li
+{
+    font-size: 21px;
+    margin-left: 20px;
+}
+
+button
+{
+    width: 100px;
+    height: 45px;
+}
+
+img
+{
+    margin-left: 44%;
+    margin-top: -87px;
+    opacity: 0.8;
+}
+
+footer
+{
+    position: fixed;
+    bottom: 5px;
+    left: 650px;
+    width: 50%;
+    text-align: center;
+    color: grey;
+    font-size: 15px;
+}

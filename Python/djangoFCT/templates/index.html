@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load auth_extras %}
+
+{% block title %}
+    Indice
+{% endblock %}
+
+{% block content %}
+    <div class="superDivIndex">
+        <div class="elementoIndice">
+            <h1>
+                <a href="{% url 'alumnos_list'%}">
+                    <span class="spanInicio">
+                        <i class="bi bi-person"></i>
+                        &nbsp;&nbsp;Alumnos&nbsp;&nbsp;
+                        <i class="bi bi-person"></i>
+                    </span>
+                </a>
+            </h1>
+        </div>
+        <div class="elementoIndice">
+            <h1>
+                <a href="{% url 'empresas_list'%}">
+                    <span class="spanInicio">
+                        <i class="bi bi-building"></i>
+                        &nbsp;&nbsp;Empresas&nbsp;&nbsp;
+                        <i class="bi bi-building"></i>
+                    </span>
+                </a>
+            </h1>
+        </div>
+        <div class="elementoIndice">
+            <h1>
+                <a href="{% url 'tutoresDocentes_list'%}">
+                    <span class="spanInicio">
+                        &nbsp;<i class="bi bi-person-badge"></i>
+                        &nbsp;&nbsp;&nbsp;Tutores&nbsp;&nbsp;&nbsp;
+                        <i class="bi bi-person-badge"></i>&nbsp;
+                    </span>
+                </a>
+            </h1>
+        </div>
+        {% if request.user|has_group:"tutores" %}
+            <div class="elementoIndice">
+                <h1>
+                    <a href="{% url 'asignados_list'%}">
+                        <span class="spanInicio">
+                            <i class="bi bi-check2-circle"></i>
+                            &nbsp;&nbsp;Asignados&nbsp;&nbsp;
+                            <i class="bi bi-check2-circle"></i>
+                        </span>
+                    </a>
+                </h1>
+            </div>
+        {% endif %}
+    </div>
+
+{% endblock %}
+
+{% block pie %}
+    Autores: Guillermo Morata Romero y Pedro Jose Rodriguez Gallego
+{% endblock %}
+
+{% block imagenInicio %}
+    <span class="helper"></span> <img src="{% static "images/safa_small.png" %}" alt="My image"/>
+{% endblock %}
