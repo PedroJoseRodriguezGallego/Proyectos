@@ -25,6 +25,10 @@ Repositorio con todos los proyectos realizados por Pedro José Rodríguez Galleg
 	- Visor Cuentas : Aplicación que nos permite recorrer bidireccionalmente datos y modificarlos (usando JavaFX y CSS).
 	
 	- Neuafrica :  Aplicación android que nos muestra las distintas capitales de África junto a una serie de opciones hasta completarlas todas (usando SQLite3).
+	
+	- Gestor Ficheros : 
+	
+	- Gestion Taller : 
 
 
 

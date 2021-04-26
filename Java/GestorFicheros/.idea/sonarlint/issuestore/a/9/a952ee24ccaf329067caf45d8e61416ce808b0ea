@@ -1,0 +1,91 @@
+
+?
+java:S1643ó"Use a StringBuilder instead.(µ€÷ûÿÿÿÿ8ğ æğĞ.
+o
+java:S1104"RMake nombre a static final constant or non-public and provide accessors if needed.(¦ÊØ’8ÔĞğĞ.
+H
+java:S1172m"2Remove this unused method parameter "actionEvent".(Û€¨²
+Œ
+java:S11924"qDefine a constant instead of duplicating this literal "(Ha ocurrido un error en la lectura o escritura)" 5 times.(Ô¨€ğşÿÿÿÿ
+v
+java:S1104 "TMake btnNuevo a static final constant or non-public and provide accessors if needed.(æÆøôÿÿÿÿÿ8‘ñĞ.
+q
+java:S1104"VMake btnGuardar a static final constant or non-public and provide accessors if needed.(¢šî€úÿÿÿÿ
+H
+java:S1075;"&Remove this hard-coded path-delimiter.(ùõÌîüÿÿÿÿ8¨¹¢òĞ.
+I
+java:S1075ä"&Remove this hard-coded path-delimiter.(¨£©õıÿÿÿÿ8ğ æğĞ.
+>
+java:S1643t"Use a StringBuilder instead.(°ÛË‰ÿÿÿÿÿ8àŞçğĞ.
+u
+java:S2095–"RUse try-with-resources or close this "BufferedOutputStream" in a "finally" clause.(€¥éÑùÿÿÿÿ8€Ä¤òĞ.
+:
+java:S1643¼"Use a StringBuilder instead.(Äóë–8×êÍñĞ.
+r
+java:S1104"WMake btnCancelar a static final constant or non-public and provide accessors if needed.(Ü”Ú‘ûÿÿÿÿ
+v
+java:S1104"[Make botonCntVocales a static final constant or non-public and provide accessors if needed.(ûŸ°³ùÿÿÿÿ
+n
+java:S1104"SMake etiRuta a static final constant or non-public and provide accessors if needed.(”Äê€şÿÿÿÿ
+j
+java:S2095«"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(š ¶Ş8ğ æğĞ.
+p
+java:S1104"UMake etiNombre a static final constant or non-public and provide accessors if needed.(©ÇËõúÿÿÿÿ
+n
+java:S1104"XMake txtResultado a static final constant or non-public and provide accessors if needed.(î³ãÅ
+s
+java:S1104"XMake etiUltimaMod a static final constant or non-public and provide accessors if needed.(–«µüÿÿÿÿ
+G
+java:S1172""2Remove this unused method parameter "actionEvent".(š¡‹
+k
+java:S1104"UMake etiTamano a static final constant or non-public and provide accessors if needed.(¿‚İ
+h
+java:S2674‡"JCheck the return value of the "read" call to see how many bytes were read.(õ³¦Ï8€Ä¤òĞ.
+X
+java:S1117Ş":Rename "nombre" which hides the field declared at line 17.(–’‘8ğ æğĞ.
+w
+java:S1104"\Make botonCntPalabras a static final constant or non-public and provide accessors if needed.(—ºÅßúÿÿÿÿ
+i
+java:S2095í"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(¶·x8ğ æğĞ.
+h
+java:S2095K"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(¶·x8¨¹¢òĞ.
+1
+java:S1643."Use a StringBuilder instead.(œÂÀ<
+U
+java:S1172¾"2Remove this unused method parameter "actionEvent".(Ì©½©ùÿÿÿÿ8ğ æğĞ.
+r
+java:S1104"WMake botonCopiar a static final constant or non-public and provide accessors if needed.(š¢î©ÿÿÿÿÿ
+b
+java:S2095,"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(š ¶Ş
+m
+java:S1104"WMake botonEditar a static final constant or non-public and provide accessors if needed.(À‚Öù
+t
+java:S2095…"QUse try-with-resources or close this "BufferedInputStream" in a "finally" clause.(Íİòùÿÿÿÿ8€Ä¤òĞ.
+m
+java:S1104"XMake etiExtension a static final constant or non-public and provide accessors if needed.(… Y
+T
+java:S1172e"2Remove this unused method parameter "actionEvent".(±Œ—€şÿÿÿÿ8±’¯òĞ.
+U
+java:S1172¡"2Remove this unused method parameter "actionEvent".(‹Â¥êûÿÿÿÿ8ğ æğĞ.
+t
+java:S1104"WMake btnDetalles a static final constant or non-public and provide accessors if needed.(­úš¿8¼ññĞ.
+T
+java:S1172b"2Remove this unused method parameter "actionEvent".(²ñûÿÿÿÿ8±’¯òĞ.
+U
+java:S1172Ø"2Remove this unused method parameter "actionEvent".(¨ôìŞøÿÿÿÿ8ğ æğĞ.
+j
+java:S2095ë"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(š ¶Ş8ğ æğĞ.
+h
+java:S1104"RMake escena a static final constant or non-public and provide accessors if needed.(ô§
+j
+java:S2095È"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(š ¶Ş8ğ æğĞ.
+:
+java:S1643â"Use a StringBuilder instead.(ƒö¶¯8ğ æğĞ.
+O
+java:S1172W"2Remove this unused method parameter "actionEvent".(¯²¿¯8Úä¯òĞ.
+N
+java:S11728"2Remove this unused method parameter "actionEvent".(âşåb8¨¹¢òĞ.
+m
+java:S1104"WMake botonCifrar a static final constant or non-public and provide accessors if needed.(ğˆñÉ
+:
+java:S1643õ"Use a StringBuilder instead.(ÎÓÊ’8ğ æğĞ.
