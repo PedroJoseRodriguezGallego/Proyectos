@@ -1,0 +1,75 @@
+<DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+		<meta charset="utf-8"/>
+        <title> Ejercicio Puntuable EP1T-5 </title>
+		<link rel="stylesheet" type="text/css" href="ep1t_5.css">
+    </head>
+
+
+
+    <body>
+		<div class="titulo">
+			<div class="imagentitulo"> <a href="https://es.wikipedia.org/wiki/Acuerdo_de_Par%C3%ADs_(2015)"> <img src="manzana.jpg" /> </a> </div>
+			<div class="titulotitulo"> <h1 class="e1"> ¿Conoces el Acuerdo por el Clima firmado en París? </h1> </div>
+		</div>
+		
+		
+		<div class="cuerpo">
+			<h1 class="e2"> &iexcl Con tu apoyo, lo lograremos ! </h1>
+				
+			<form method="post" action=mailto:"atolon@fundacionsafa.es">
+			
+				<div class="apartado">
+					<label class="entradilla"> Nombre: </label> <label class="asterisco" > * </label>
+						<input class="rellenable" type="text" name="nombre" placeholder="Nombre y primer apellido" required />
+				</div>
+				
+				
+				<div class="apartado">
+					<label class="entradilla"> Sexo: </label> <label class="asterisco" > * </label>
+						<input type="radio" name="sexo" value="hombre" required /> Hombre
+						<input type="radio" name="sexo" value="mujer" required /> Mujer
+				</div>
+				
+			
+				<div class="apartado">
+					<label class="entradilla"> Direcci&oacuten de correo: </label> <label class="asterisco" > * </label>
+						<input class="rellenable" type="mail" name="correo" placeholder="identificador@dominio.com" required />
+				</div>
+			
+			
+				<div class="apartado">
+					<label class="entradilla"> Blog que recomiendas leer: </label>
+						<input class="rellenable" type="url" name="blog" />
+				</div>	
+					
+					
+				<div class="apartado">	
+					<label class="entradilla"> Puedo colaborar: </label>
+						<select name="colaboracion">
+							<option value="1"> --- </option> 
+							<option value="2"> Difundi&eacutendolo en redes sociales </option> 
+							<option value="3"> Impartiendo charlas sobre el tema </option>
+							<option value="3"> Organizando concentraciones de apoyo </option>
+						</select> 
+				</div>
+			
+			
+				<div class="apartado">
+					<label class="entradilla"> Mensaje que nos dejas: </label> <label class="asterisco" > * </label>
+						<textarea name="mensaje" placeholder="Escribe aquí tu mensaje, por favor." required></textarea>
+				</div>
+				
+				
+				<input type="submit" class="boton" value=" &iexcl Envialo !" />
+
+			</form>
+			
+		</div>
+		
+    </body>
+	
+</html>

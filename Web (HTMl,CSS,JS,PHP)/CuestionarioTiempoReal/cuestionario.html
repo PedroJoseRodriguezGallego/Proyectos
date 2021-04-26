@@ -1,0 +1,725 @@
+﻿<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title> Cuestionario </title>
+		<link rel="stylesheet" type="text/css" href="cuestionario.css"/>
+		<script src="cuestionario.js"></script>
+	</head>
+	
+	
+	<body>
+		
+		<div class="titulo"> 
+			<h1> Cuestionario personal </h1>
+		</div>
+	
+	
+		<div class="enunciado">
+			<p> De las siguientes características personales indica con cuál de cada cuatro (sólo una de ellas) te sientes más identificado/a: </p>
+		<div>
+		
+		<form name="cuestionario">
+		<table> <!-- 1 -->
+			<tr>
+				<td class="letra"> A <input type="radio" class="boton_a" name="tabla1" onclick="count()" value="A" /> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta">  Directo/a </td>
+			</tr>
+
+			<tr>
+				<td> </td>
+				<td class="letra"> B <input type="radio" class="boton_b" name="tabla1" onclick="count()" value="B" /> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Hablador/a </td>
+			</tr>
+
+			<tr> 
+				<td> </td>
+				<td> </td>
+				<td class="letra"> C <input type="radio" class="boton_c" name="tabla1" onclick="count()" value="C" /> </td>
+				<td> </td>
+				<td class="respuesta"> Suave </td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="letra"> D <input type="radio" class="boton_d" name="tabla1" onclick="count()" value="D" /> </td>
+				<td class="respuesta"> Primero analizo cuidadosamente las situaciones </td>
+			</tr>
+		</table>
+		
+		<!-- ---------------------------------------------------------------------------------------- -->
+		
+		<table> <!-- 2 -->
+			<tr>
+				<td class="letra"> A <input type="radio" class="boton_a" name="tabla2" onclick="count()" value="A" /> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Atrevido/a </td>
+			</tr>
+
+			<tr>
+				<td> </td>
+				<td class="letra"> B <input type="radio" class="boton_b" name="tabla2" onclick="count()" value="B" /> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Me entusiasmo con facilidad </td>
+			</tr>
+
+			<tr> 
+				<td> </td>
+				<td> </td>
+				<td class="letra"> C <input type="radio" class="boton_c" name="tabla2" onclick="count()" value="C" /> </td>
+				<td> </td>
+				<td class="respuesta"> Tiendo a no participar activamente </td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="letra"> D <input type="radio" class="boton_d" name="tabla2" onclick="count()" value="D" /> </td>
+				<td class="respuesta"> Me gusta que todo esté bien organizado </td>
+			</tr>
+		</table>
+		
+		<!-- ---------------------------------------------------------------------------------------- -->
+		
+		<table> <!-- 3 -->
+			<tr>
+				<td class="letra"> A <input type="radio" class="boton_a" name="tabla3" onclick="count()" value="A" /> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Contundente</td>
+			</tr>
+
+			<tr>
+				<td> </td>
+				<td class="letra"> B <input type="radio" class="boton_b" name="tabla3" onclick="count()" value="B" /> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Persuasivo/a </td>
+			</tr>
+
+			<tr> 
+				<td> </td>
+				<td> </td>
+				<td class="letra"> C <input type="radio" class="boton_c" name="tabla3" onclick="count()" value="C" /> </td>
+				<td> </td>
+				<td class="respuesta"> Simpático/a </td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="letra"> D <input type="radio" class="boton_d" name="tabla3" onclick="count()" value="D" /> </td>
+				<td class="respuesta"> Exacto/a </td>
+			</tr>
+		</table>
+		
+		<!-- ---------------------------------------------------------------------------------------- -->
+		
+		<table> <!-- 4 -->
+			<tr>
+				<td class="letra"> A <input type="radio" class="boton_a" name="tabla4" onclick="count()" value="A" /> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Innovador/a </td>
+			</tr>
+
+			<tr>
+				<td> </td>
+				<td class="letra"> B <input type="radio" class="boton_b" name="tabla4" onclick="count()" value="B" /> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Creativo/a </td>
+			</tr>
+
+			<tr> 
+				<td> </td>
+				<td> </td>
+				<td class="letra"> C <input type="radio" class="boton_c" name="tabla4" onclick="count()" value="C" /> </td>
+				<td> </td>
+				<td class="respuesta"> Parte de un equipo </td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="letra"> D <input type="radio" class="boton_d" name="tabla4" onclick="count()" value="D" /> </td>
+				<td class="respuesta"> Preciso </td>
+			</tr>
+		</table>
+		
+		<!-- ---------------------------------------------------------------------------------------- -->
+		
+		<table> <!-- 5 -->
+			<tr>
+				<td class="letra"> A <input type="radio" class="boton_a" name="tabla5" onclick="count()" value="A" /> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Competitivo/a </td>
+			</tr>
+
+			<tr>
+				<td> </td>
+				<td class="letra"> B <input type="radio" class="boton_b" name="tabla5" onclick="count()" value="B" /> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Optimista </td>
+			</tr>
+
+			<tr> 
+				<td> </td>
+				<td> </td>
+				<td class="letra"> C <input type="radio" class="boton_c" name="tabla5" onclick="count()" value="C" /> </td>
+				<td> </td>
+				<td class="respuesta"> Sereno/a </td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="letra"> D <input type="radio" class="boton_d" name="tabla5" onclick="count()" value="D" /> </td>
+				<td class="respuesta"> Tradicional, las cosas como siempre </td>
+			</tr>
+		</table>
+		
+		<!-- ---------------------------------------------------------------------------------------- -->
+		
+		<table> <!-- 6 -->
+			<tr>
+				<td class="letra"> A <input type="radio" class="boton_a" name="tabla6" onclick="count()" value="A" /> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Decidido/a </td>
+			</tr>
+
+			<tr>
+				<td> </td>
+				<td class="letra"> B <input type="radio" class="boton_b" name="tabla6" onclick="count()" value="B" /> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Encantador/a</td>
+			</tr>
+
+			<tr> 
+				<td> </td>
+				<td> </td>
+				<td class="letra"> C <input type="radio" class="boton_c" name="tabla6" onclick="count()" value="C" /> </td>
+				<td> </td>
+				<td class="respuesta"> Primero pienso y luego actúo </td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="letra"> D <input type="radio" class="boton_d" name="tabla6" onclick="count()" value="D" /> </td>
+				<td class="respuesta"> Maduro/a </td>
+			</tr>
+		</table>
+		
+		<!-- ---------------------------------------------------------------------------------------- -->
+		
+		<table> <!-- 7 -->
+			<tr>
+				<td class="letra"> A <input type="radio" class="boton_a" name="tabla7" onclick="count()" value="A" /> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Solucionador de problemas </td>
+			</tr>
+
+			<tr>
+				<td> </td>
+				<td class="letra"> B <input type="radio" class="boton_b" name="tabla7" onclick="count()" value="B" /> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Popular </td>
+			</tr>
+
+			<tr> 
+				<td> </td>
+				<td> </td>
+				<td class="letra"> C <input type="radio" class="boton_c" name="tabla7" onclick="count()" value="C" /> </td>
+				<td> </td>
+				<td class="respuesta"> Sincero/a </td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="letra"> D <input type="radio" class="boton_d" name="tabla7" onclick="count()" value="D" /> </td>
+				<td class="respuesta"> Objetivo/a </td>
+			</tr>
+		</table>
+		
+		<!-- ---------------------------------------------------------------------------------------- -->
+		
+		<table> <!-- 8 -->
+			<tr>
+				<td class="letra"> A <input type="radio" class="boton_a" name="tabla8" onclick="count()" value="A" /> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Agresiva/o </td>
+			</tr>
+
+			<tr>
+				<td> </td>
+				<td class="letra"> B <input type="radio" class="boton_b" name="tabla8" onclick="count()" value="B" /> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Segura/o de mi misma/o </td>
+			</tr>
+
+			<tr> 
+				<td> </td>
+				<td> </td>
+				<td class="letra"> C <input type="radio" class="boton_c" name="tabla8" onclick="count()" value="C" /> </td>
+				<td> </td>
+				<td class="respuesta"> Tengo mucha persistencia </td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="letra"> D <input type="radio" class="boton_d" name="tabla8" onclick="count()" value="D" /> </td>
+				<td class="respuesta"> Perfeccionista en lo que hago </td>
+			</tr>
+		</table>
+		
+		<!-- ---------------------------------------------------------------------------------------- -->
+		
+		<table> <!-- 9 -->
+			<tr>
+				<td class="letra"> A <input type="radio" class="boton_a" name="tabla9" onclick="count()" value="A" /> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Persistente </td>
+			</tr>
+
+			<tr>
+				<td> </td>
+				<td class="letra"> B <input type="radio" class="boton_b" name="tabla9" onclick="count()" value="B" /> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Abierta/o </td>
+			</tr>
+
+			<tr> 
+				<td> </td>
+				<td> </td>
+				<td class="letra"> C <input type="radio" class="boton_c" name="tabla9" onclick="count()" value="C" /> </td>
+				<td> </td>
+				<td class="respuesta"> Posesiva/o </td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="letra"> D <input type="radio" class="boton_d" name="tabla9" onclick="count()" value="D" /> </td>
+				<td class="respuesta"> Necesito tiempo </td>
+			</tr>
+		</table>
+		
+		<!-- ---------------------------------------------------------------------------------------- -->
+		
+		<table> <!-- 10 -->
+			<tr>
+				<td class="letra"> A <input type="radio" class="boton_a" name="tabla10" onclick="count()" value="A" /> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Exigente </td>
+			</tr>
+
+			<tr>
+				<td> </td>
+				<td class="letra"> B <input type="radio" class="boton_b" name="tabla10" onclick="count()" value="B" /> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Sociable </td>
+			</tr>
+
+			<tr> 
+				<td> </td>
+				<td> </td>
+				<td class="letra"> C <input type="radio" class="boton_c" name="tabla10" onclick="count()" value="C" /> </td>
+				<td> </td>
+				<td class="respuesta"> Amable</td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="letra"> D <input type="radio" class="boton_d" name="tabla10" onclick="count()" value="D" /> </td>
+				<td class="respuesta"> Reflexivo/a </td>
+			</tr>
+		</table>
+		
+		<!-- ---------------------------------------------------------------------------------------- -->
+		
+		<table> <!-- 11 -->
+			<tr>
+				<td class="letra"> A <input type="radio" class="boton_a" name="tabla11" onclick="count()" value="A" /> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Impaciente </td>
+			</tr>
+
+			<tr>
+				<td> </td>
+				<td class="letra"> B <input type="radio" class="boton_b" name="tabla11" onclick="count()" value="B" /> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Impulsiva/o </td>
+			</tr>
+
+			<tr> 
+				<td> </td>
+				<td> </td>
+				<td class="letra"> C <input type="radio" class="boton_c" name="tabla11" onclick="count()" value="C" /> </td>
+				<td> </td>
+				<td class="respuesta"> Tranquila/o </td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="letra"> D <input type="radio" class="boton_d" name="tabla11" onclick="count()" value="D" /> </td>
+				<td class="respuesta"> Metódico/a </td>
+			</tr>
+		</table>
+		
+		<!-- ---------------------------------------------------------------------------------------- -->
+		
+		<table> <!-- 12 -->
+			<tr>
+				<td class="letra"> A <input type="radio" class="boton_a" name="tabla12" onclick="count()" value="A" /> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Dominante </td>
+			</tr>
+
+			<tr>
+				<td> </td>
+				<td class="letra"> B <input type="radio" class="boton_b" name="tabla12" onclick="count()" value="B" /> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Confiado/a </td>
+			</tr>
+
+			<tr> 
+				<td> </td>
+				<td> </td>
+				<td class="letra"> C <input type="radio" class="boton_c" name="tabla12" onclick="count()" value="C" /> </td>
+				<td> </td>
+				<td class="respuesta"> Comprensivo/a </td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="letra"> D <input type="radio" class="boton_d" name="tabla12" onclick="count()" value="D" /> </td>
+				<td class="respuesta"> Buscador de datos </td>
+			</tr>
+		</table>
+		
+		<!-- ---------------------------------------------------------------------------------------- -->
+		
+		<table> <!-- 13 -->
+			<tr>
+				<td class="letra"> A <input type="radio" class="boton_a" name="tabla13" onclick="count()" value="A" /> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Asumo riesgos </td>
+			</tr>
+
+			<tr>
+				<td> </td>
+				<td class="letra"> B <input type="radio" class="boton_b" name="tabla13" onclick="count()" value="B" /> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Me relaciono bien </td>
+			</tr>
+
+			<tr> 
+				<td> </td>
+				<td> </td>
+				<td class="letra"> C <input type="radio" class="boton_c" name="tabla13" onclick="count()" value="C" /> </td>
+				<td> </td>
+				<td class="respuesta"> Relajado/a </td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="letra"> D <input type="radio" class="boton_d" name="tabla13" onclick="count()" value="D" /> </td>
+				<td class="respuesta"> Siempre me pongo el listón alto </td>
+			</tr>
+		</table>
+		
+		<!-- ---------------------------------------------------------------------------------------- -->
+		
+		<table> <!-- 14 -->
+			<tr>
+				<td class="letra"> A <input type="radio" class="boton_a" name="tabla14" onclick="count()" value="A" /> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Con iniciativa </td>
+			</tr>
+
+			<tr>
+				<td> </td>
+				<td class="letra"> B <input type="radio" class="boton_b" name="tabla14" onclick="count()" value="B" /> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Generoso/a </td>
+			</tr>
+
+			<tr> 
+				<td> </td>
+				<td> </td>
+				<td class="letra"> C <input type="radio" class="boton_c" name="tabla14" onclick="count()" value="C" /> </td>
+				<td> </td>
+				<td class="respuesta"> Estable </td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="letra"> D <input type="radio" class="boton_d" name="tabla14" onclick="count()" value="D" /> </td>
+				<td class="respuesta"> Educada/o </td>
+			</tr>
+		</table>
+		
+		<!-- ---------------------------------------------------------------------------------------- -->
+		
+		<table> <!-- 15 -->
+			<tr>
+				<td class="letra"> A <input type="radio" class="boton_a" name="tabla15" onclick="count()" value="A" /> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Aventurero/a </td>
+			</tr>
+
+			<tr>
+				<td> </td>
+				<td class="letra"> B <input type="radio" class="boton_b" name="tabla15" onclick="count()" value="B" /> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Convenzo fácilmente a los demás </td>
+			</tr>
+
+			<tr> 
+				<td> </td>
+				<td> </td>
+				<td class="letra"> C <input type="radio" class="boton_c" name="tabla15" onclick="count()" value="C" /> </td>
+				<td> </td>
+				<td class="respuesta"> Sé escuchar </td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="letra"> D <input type="radio" class="boton_d" name="tabla15" onclick="count()" value="D" /> </td>
+				<td class="respuesta"> Rígido </td>
+			</tr>
+		</table>
+	
+		<!-- ---------------------------------------------------------------------------------------- -->
+		
+		<table> <!-- 16 -->
+			<tr>
+				<td class="letra"> A <input type="radio" class="boton_a" name="tabla16" onclick="count()" value="A" /> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Autoritario/a </td>
+			</tr>
+
+			<tr>
+				<td> </td>
+				<td class="letra"> B <input type="radio" class="boton_b" name="tabla16" onclick="count()" value="B" /> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Me emociono fácilmente </td>
+			</tr>
+
+			<tr> 
+				<td> </td>
+				<td> </td>
+				<td class="letra"> C <input type="radio" class="boton_c" name="tabla16" onclick="count()" value="C" /> </td>
+				<td> </td>
+				<td class="respuesta"> Me gusta complacer a los demás </td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="letra"> D <input type="radio" class="boton_d" name="tabla16" onclick="count()" value="D" /> </td>
+				<td class="respuesta"> Comedido/a </td>
+			</tr>
+		</table>
+		
+		<!-- ---------------------------------------------------------------------------------------- -->
+		
+		<table> <!-- 17 -->
+			<tr>
+				<td class="letra"> A <input type="radio" class="boton_a" name="tabla17" onclick="count()" value="A" /> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Inquisitivo/a </td>
+			</tr>
+
+			<tr>
+				<td> </td>
+				<td class="letra"> B <input type="radio" class="boton_b" name="tabla17" onclick="count()" value="B" /> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Emprendedor/a </td>
+			</tr>
+
+			<tr> 
+				<td> </td>
+				<td> </td>
+				<td class="letra"> C <input type="radio" class="boton_c" name="tabla17" onclick="count()" value="C" /> </td>
+				<td> </td>
+				<td class="respuesta"> Me cuesta mostrarme tal y como soy </td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="letra"> D <input type="radio" class="boton_d" name="tabla17" onclick="count()" value="D" /> </td>
+				<td class="respuesta"> Lógico/a </td>
+			</tr>
+		</table>
+		
+		<!-- ---------------------------------------------------------------------------------------- -->
+		
+		<table> <!-- 18 -->
+			<tr>
+				<td class="letra"> A <input type="radio" class="boton_a" name="tabla18" onclick="count()" value="A" /> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Rápido/a </td>
+			</tr>
+
+			<tr>
+				<td> </td>
+				<td class="letra"> B <input type="radio" class="boton_b" name="tabla18" onclick="count()" value="B" /> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Agradable </td>
+			</tr>
+
+			<tr> 
+				<td> </td>
+				<td> </td>
+				<td class="letra"> C <input type="radio" class="boton_c" name="tabla18" onclick="count()" value="C" /> </td>
+				<td> </td>
+				<td class="respuesta"> Pasivo/a </td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="letra"> D <input type="radio" class="boton_d" name="tabla18" onclick="count()" value="D" /> </td>
+				<td class="respuesta"> Cuidadoso/a </td>
+			</tr>
+		</table>
+		
+		<!-- ---------------------------------------------------------------------------------------- -->
+		
+		<table> <!-- 19 -->
+			<tr>
+				<td class="letra"> A <input type="radio" class="boton_a" name="tabla19" onclick="count()" value="A" /> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Me encantan los retos </td>
+			</tr>
+
+			<tr>
+				<td> </td>
+				<td class="letra"> B <input type="radio" class="boton_b" name="tabla19" onclick="count()" value="B" /> </td>
+				<td> </td>
+				<td> </td>
+				<td class="respuesta"> Efusivo/a </td>
+			</tr>
+
+			<tr> 
+				<td> </td>
+				<td> </td>
+				<td class="letra"> C <input type="radio" class="boton_c" name="tabla19" onclick="count()" value="C" /> </td>
+				<td> </td>
+				<td class="respuesta"> Bueno/a </td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="letra"> D <input type="radio" class="boton_d" name="tabla19" onclick="count()" value="D" /> </td>
+				<td class="respuesta"> Reservado/a </td>
+			</tr>
+		</table>
+		</form>
+
+		<!-- ---------------------------------------------------------------------------------------- -->
+	
+		<table class="tabla_resultado"> <!-- Resultado -->
+			<tr>
+				<td class="total" colspan="8"> <b> TOTALES </b> </td>
+			</tr>
+
+			<tr>
+				<td class="cancela_resultado"> <b> A </b> </td>
+				<td class="cancela_resultado"> <div id="resultadoA"> 0 </div> </td>
+				<td class="cancela_resultado"> <b> B </b> </td>
+				<td class="cancela_resultado"> <div id="resultadoB"> 0 </div> </td>
+				<td class="cancela_resultado"> <b> C </b>  </td>
+				<td class="cancela_resultado"> <div id="resultadoC"> 0 </div> </td>
+				<td class="cancela_resultado"> <b> D </b> </td>
+				<td class="cancela_resultado"> <div id="resultadoD"> 0 </div> </td>
+			</tr>
+		</table>
+	
+	</body>
+</html>

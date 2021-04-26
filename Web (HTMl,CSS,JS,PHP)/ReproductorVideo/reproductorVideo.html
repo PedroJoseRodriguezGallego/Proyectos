@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<meta charset="utf-8" />
+		<title> Reproductor de video Javascript </title>
+		<link rel="stylesheet" type="text/css" href="reproductorVideo.css" />
+		<script src="reproductorVideo.js"></script>
+	</head>
+
+
+
+	<body>
+	
+		<h1> <u> Reproductor de vídeo </u> </h1>
+		<h1 style='font-size: 14px;'>
+			<p> Necestias tener un video llamado video.mp4 en la carpeta junto al HTML para usar el reproductor </p>
+		</h1>
+	
+		<div id="video_container">
+		
+			<div class="video">
+				<video id="my_video">
+					<source src="video.mp4" type="video/mp4" />
+					Tu navegador no soporta este video en HTML5. <!-- Solo se mostrara si el navegador no puede reproducir el video -->
+				</video>
+			</div>
+			
+			
+			<div id="video_controls_bar">
+
+				<input type="button" value=" " id="playpausebutton" title="Botón para iniciar y pausar el vídeo"/>
+				
+				<input type="range"  class="control" id="timeSlider" min="0" max="100" value="0" step="1"/> 
+				
+				<span  id="currentTimeText"></span> <span id="separador">/</span> <span id="durationTimeText" class="control"></span>
+				
+				<input type="button" value=" " id="backwardButton" onclick="skipButton(-5)" title="Botón para retroceder 5 segundos el vídeo"/>
+				<input type="button" value=" " class="control" id="forwardButton" onclick="skipButton(5)" title="Botón para avanzar 5 segundos el vídeo"/>
+				
+				<input type="button" value=" " id="muteButton" title="Botón para silenciar el vídeo"/>
+				<input type="range" class="control" id="volumeSlider" min="0" max="100" value="100" step="1"/>
+				
+				<input type="button" value=" " id="fullscreenButton" title="Botón para poner en pantalla completa el vídeo"/>
+				
+			</div>
+			
+		</div>
+		
+	</body>
+	
+</html>

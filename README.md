@@ -51,3 +51,17 @@ Repositorio con todos los proyectos realizados por Pedro José Rodríguez Galleg
 	- Gestion Hospital : Aplicación que nos permite gestionar una base de datos de un hospital (usando MariaDB y Tkinter).
 	
 	- DjangoFCT : Aplicación con el framework Django en la que gestionamos una institucion de educacion.
+
+
+
+--> WEB (HTML, CSS, JS, PHP)
+	
+	- Cuestionario en tiempo real : 
+	
+	- Formulario CSS : 
+	
+	- Formulario JS : 
+	
+	- Formulario PHP : 
+	
+	- Reproductor de video : 

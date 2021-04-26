@@ -1,0 +1,173 @@
+img{
+		width:125px;
+		height:125px;
+		
+		border-radius:12px;
+		
+		margin:10px;
+		
+		box-shadow: 3px 3px 5px 0px rgba(50,50,50,0.5);
+	}
+	
+	
+select{
+			width:450px;
+			height:25px;
+			
+			font-size:15px;
+			
+			margin-left:20px;
+			margin-right:20px;
+			
+			border-radius:4px;
+			border: 0px;
+	}
+	
+	
+textarea{
+			height:150px;
+			width:450px;
+			
+			font-size:15px;
+			
+			margin-left:20px;
+			margin-right:20px;
+			
+			border-radius:4px;
+			border: 0px;
+		}	
+	
+	
+body{
+		background-color:#BFD7C1;
+		
+		font-family:arial;
+		font-size:15px;
+		color:black;
+	}
+	
+
+input:not([type='submit']):focus{
+				outline: none !important;
+				
+				background-color: #E5E6E7;
+				
+				border-radius:5px;
+}
+
+/* *************************************************** */
+
+.rellenable{
+			width:450px;
+			height:25px;
+			
+			font-size:15px;
+			
+			margin-left:20px;
+			margin-right:20px;
+			
+			border-radius:5px;
+			border: 0px;
+		}	
+	
+	
+.entradilla{
+			font-family:arial;
+			font-weight: bold;
+			font-size:15px;
+			
+			margin-left:20px;
+			margin-top:20px;
+		}
+	
+	
+.apartado{
+			margin-bottom:30px;
+}
+	
+	
+.titulo{
+			background-color:#FFCC33;
+			
+			width:506px;
+			height:140px;
+			
+			padding:20px;
+			
+			border-radius:15px;
+		}
+		
+
+
+.e1{
+		color:#348A00;
+		
+		text-align: justify;
+	}
+
+
+
+.e2{
+		text-align:center;
+	}
+		
+		
+
+.asterisco{
+				color:#E5E6E7;
+				
+				font-weight: bold;
+				
+				margin-right:20px;
+		}
+		
+		
+		
+.cuerpo{
+			width:506px;
+			
+			background-color:#87C489;
+			
+			border-radius:15px;
+			
+			padding:20px;
+		}
+		
+
+
+.boton{
+			background-color:#6EA070;
+			color:#BFD7C1;
+			
+			border-radius:1px;
+			
+			margin-left:20px;
+			margin-right:20px;
+			margin-top:20px;
+			
+			width:450px;
+			height:25px;
+			
+			font-size:15px;
+			
+			border-radius:4px;
+			border: 0px;
+	}
+	
+	
+.imagentitulo{
+				width:125px;
+				height:125px;
+					
+				float:left;
+	}
+	
+	
+.titulotitulo{
+					width:325px;
+					height:140px;
+						
+					float:left;
+						
+					margin-left:35px;
+}

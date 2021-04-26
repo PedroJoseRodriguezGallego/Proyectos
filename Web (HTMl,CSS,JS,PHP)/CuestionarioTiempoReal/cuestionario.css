@@ -1,0 +1,64 @@
+table{
+	margin:0 auto;
+	border:solid 1px black;
+	border-collapse:collapse;
+	margin-bottom:20px;
+}
+
+
+td{
+	border:solid 1px black;
+	padding:2px;
+}
+
+
+p{
+	margin-bottom:50px;
+}
+
+input{
+	background-color:white;
+	border:0;
+}
+
+/* ******************************************************************************* */
+
+.titulo{
+		text-align:center;
+}
+
+
+.enunciado{
+		text-align:center;
+}
+
+
+.letra{
+		text-align:center;
+		width:40px;
+}
+
+
+.respuesta{
+	width:450px;
+	padding-left:7px;
+}
+
+
+.total{
+	border:solid 2px black;
+	text-align:center;
+}
+
+
+.tabla_resultado{
+	margin-top:50px;
+	width:647px;
+	text-align:center;
+}
+
+
+.cancela_resultado{
+	width:12.5%;
+	border:solid 1px grey;
+}

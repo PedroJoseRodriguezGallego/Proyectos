@@ -1,0 +1,168 @@
+﻿#video_container {
+	width: 800px;
+	background-color: lightblue;
+	margin: 0 auto;
+	color: ghostwhite;
+	border: 3px solid black;
+	padding: 10px;
+}
+
+
+#video_controls_bar {
+	background: #333;
+	padding: 10px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+#playpausebutton {
+	background: url(images/play.png);
+	background-repeat: no-repeat;
+	border: none;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+
+#playpausebutton:hover {
+	opacity: 1;	
+}
+
+
+#muteButton {
+	background: url(images/unmute.png);
+	background-repeat: no-repeat;
+	border: none;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+
+#muteButton:hover {
+	opacity: 1;
+}
+
+
+#fullscreenButton {
+	background: url(images/fullscreen.png);
+	background-repeat: no-repeat;
+	border: none;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+
+#fullscreenButton:hover {
+	opacity: 1;
+}
+
+
+#forwardButton {
+	background: url(images/forward.png);
+	background-repeat: no-repeat;
+	border: none;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+
+#forwardButton:hover {
+	opacity: 1;
+}
+
+
+#backwardButton {
+	background: url(images/backward.png);
+	background-repeat: no-repeat;
+	border: none;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+
+#backwardButton:hover {
+	opacity: 1;
+}
+
+
+#timeSlider {
+	width: 300px;
+}
+
+
+#volumeSlider {
+	width: 80px;
+
+}
+
+#video_controls_bar{
+	background-color: ;
+	border:solid 1px black;
+}
+
+
+input[type='range'] {
+	-webkit-appearance: none !important;
+	background: #666;
+	border: grey 1px solid;
+	height: 4px;
+}
+
+
+input:focus {
+  border:0px solid;
+}
+
+
+input[type='range']::-webkit-slider-thumb {
+	-webkit-appearance: none !important;
+	background: #FFF;
+	height: 15px;
+	width: 15px;
+	border-radius: 100%;
+	cursor: pointer;
+}
+
+
+body{
+		background-color: #2486CE;
+}
+
+
+h1{
+		text-align:center;
+		
+		font-size:50px;
+		color:white;
+}
+
+
+video{
+			border:solid 1px white;
+			
+			margin:0 auto;
+			display:block;
+}
+
+
+.video{
+			margin:0 auto;
+			display:block;
+			
+			margin:10px;
+}
+
+
+.control{
+	margin-right:25px;
+}

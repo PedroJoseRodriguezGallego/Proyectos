@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title> EP3T_3 B</title>
+
+        <style>
+
+            h1
+            {
+                text-align: center;
+            }
+
+            ul
+            {
+                list-style: none;
+            }
+
+            li
+            {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+
+            .apartado
+            {
+                font-weight: bold;
+
+                width : 185px;
+                display: inline-block;
+            }
+
+        </style>
+
+    </head>
+    
+
+        
+    <body>
+    
+        <h1> Formulario </h1>
+    
+        <form name="formulario" action="confirm.php" method="post">
+
+            <ul>
+
+                <li> <label class="apartado"> DNI : </label> <input type="text" name="dni" placeholder="Introduce el DNI"/> </li> <hr/>
+                
+                <li> <label class="apartado"> Nombre : </label> <input type="text" name="nombre" placeholder="Introduce el nombre"/> </li> <hr/>
+
+                <li> <label class="apartado"> Apellidos : </label> <input type="text" name="apellidos" placeholder="Introduce los apellidos"/> </li> <hr/>
+ 
+                <li> <label class="apartado"> Fecha de Nacimiento : </label> <input type="text" name="fecha_nacimiento" placeholder="Fecha de nacimiento"/> </li> <hr/>
+                    
+                <li> <label class="apartado"> Domicilio : </label> <input type="text"name="domicilio" placeholder="Introduce el domicilio"/> </li> <hr/>
+                    
+                <li> <label class="apartado"> Código Postal : </label> <input type="number" name="codigo_postal" placeholder="Introduce el CP"/> </li> <hr/>
+
+                <li> <label class="apartado"> Provincia : </label> <input type="text" name="provincia" placeholder="Introduce la provincia"/> </li> <hr/>
+
+                <li> <label class="apartado"> Teléfono : </label> <input type="text" name="telefono" placeholder="Introduce el telefono"/> </li> <hr/>
+
+                <li> <label class="apartado"> Correo : </label> <input type="text" name="correo" placeholder="Introduce el correo"/> </li> <hr/>
+
+                <li>
+                    <label class="apartado"> Sexo : </label>
+                    <input type="radio" id="hombre" name="sexo" value="hombre"> Hombre
+                    <input type="radio" id="mujer" name="sexo" value="mujer"> Mujer
+                </li> <hr/>
+
+                <li> 
+                    <label class="apartado"> Estado Civil : </label>
+                    <select name="estado_civil" id="estado_civil">
+                        <option value="0"> Soltero </option> 
+                        <option value="1"> Casado </option> 
+                        <option value="2"> Divorciado </option> 
+                        <option value="3"> Viudo </option>
+                        <option value="4"> Arrejuntado </option>
+                    </select> 
+                </li> <hr/>
+
+                <li>
+                    <label class="apartado"> Idiomas : </label>
+                    <input type="checkbox" name="idiomas" value="espaniol"/> Español
+					<input type="checkbox" name="idiomas" value="frances"> Francés
+					<input type="checkbox" name="idiomas" value="ingles"/> Inglés
+                    <input type="checkbox" name="idiomas" value="aleman"/> Alemán
+                </li> <hr/>
+
+                <li> <label class="apartado"> Comentario personal : </label> <textarea name="comentario"> </textarea> </li> <hr/>
+
+                <li> 
+                    <label class="apartado"> Cuenta corriente : </label> 
+                    <input type="text" name="codigo_banco" placeholder="Codigo banco"/>
+                    <input type="text" name="codigo_sucursal" placeholder="Codigo sucursal"/>
+                    <input type="text" name="digitos_control" placeholder="Digitos de control"/>
+                    <input type="text" name="numero_cuenta" placeholder="Numero de cuenta"/>
+                </li> <hr/>
+                        
+                <li> <label class="apartado"> Hora del envío : </label> <input type="text" name="hora_envio" placeholder="Hora del envio"> </li> <hr/>
+
+                <li> 
+                    <label class="apartado"> </label>
+                    <input type="submit" value="Enviar"/>
+                    <input type="reset" value="Resetear"/>
+                </li>
+                    
+            </ul>
+
+        </form>
+                      
+    </body>
+
+</html>

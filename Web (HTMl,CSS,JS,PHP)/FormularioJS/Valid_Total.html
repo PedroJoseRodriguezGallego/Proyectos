@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+
+        <meta charset="utf-8"/>
+        <title> EP3T_3 A</title>
+        <script type="text/javascript" src="Valid_Total.js"></script>
+
+        <style>
+
+            h1
+            {
+                text-align: center;
+            }
+
+            ul
+            {
+                list-style: none;
+            }
+
+            li
+            {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+
+            .apartado
+            {
+                font-weight: bold;
+
+                width : 185px;
+                display: inline-block;
+            }
+
+        </style>
+
+    </head>
+    
+
+        
+    <body onload="mostrar_hora()">
+    
+        <h1> Formulario </h1>
+    
+        <form id="formulario" action="mailto:atolon@fundacionsafa.es" method="post">
+
+            <ul>
+
+                <li> <label class="apartado"> DNI : </label> <input type="text" id="dni" onchange="validar_campo_vacio_dni();validar_letra_dni();" placeholder="Introduce el DNI"/> </li> <hr/>
+                
+                <li> <label class="apartado"> Nombre : </label> <input type="text" id="nombre" onchange="validar_campo_vacio_nombre()" placeholder="Introduce el Nombre"/> </li> <hr/>
+
+                <li> <label class="apartado"> Apellidos : </label> <input type="text" id="apellidos" onchange="validar_campo_vacio_apellidos()" placeholder="Introduce los apellidos"/> </li> <hr/>
+
+                <li> <label class="apartado"> Fecha de Nacimiento : </label> <input type="text" id="fecha_nacimiento" onchange="validar_campo_fecha()" placeholder="Fecha de nacimiento"/> </li> <hr/>
+                    
+                <li> <label class="apartado"> Domicilio : </label> <input type="text" id="domicilio" onchange="validar_campo_vacio_domicilio()" placeholder="Introduce el domicilio"/> </li> <hr/>
+                    
+                <li> <label class="apartado"> Código Postal : </label> <input type="number" id="codigo_postal" onchange="validar_campo_numerico_longitud_fija_cp();validar_campo_vacio_cp();" placeholder="Introduce el CP"/> </li> <hr/>
+
+                <li> <label class="apartado"> Provincia : </label> <input type="text" id="provincia" onchange="validar_campo_vacio_provincia()" placeholder="Introduce la provincia"/> </li> <hr/>
+
+                <li> <label class="apartado"> Teléfono : </label> <input type="text" id="telefono" onchange="validar_campo_numerico_longitud_fija_tlf();validar_campo_vacio_tlf();" placeholder="Introduce el telefono"/> </li> <hr/>
+
+                <li> <label class="apartado"> Correo : </label> <input type="text" id="correo" onchange="validar_campo_correo();validar_campo_vacio_correo();" placeholder="Introduce el correo"/> </li> <hr/>
+
+                <li>
+                    <label class="apartado"> Sexo : </label>
+                    <input type="radio" id="hombre" name="sexo" value="hombre" onchange="mostrar_sexo()"> Hombre
+                    <input type="radio" id="mujer" name="sexo" value="mujer" onchange="mostrar_sexo()"> Mujer
+                </li> <hr/>
+
+                <li> 
+                    <label class="apartado"> Estado Civil : </label>
+                    <select name="estado_civil" id="estado_civil">
+                        <option value="0"> Soltero </option> 
+                        <option value="1"> Casado </option> 
+                        <option value="2"> Divorciado </option> 
+                        <option value="3"> Viudo </option>
+                        <option value="4"> Arrejuntado </option>
+                    </select> 
+                </li> <hr/>
+
+                <li>
+                    <label class="apartado"> Idiomas : </label>
+                    <input type="checkbox" name="idiomas" value="Espanol" onchange="mostrar_idiomas()"/> Español
+					<input type="checkbox" name="idiomas" value="Frances" onchange="mostrar_idiomas()"/> Francés
+					<input type="checkbox" name="idiomas" value="Ingles" onchange="mostrar_idiomas()"/> Inglés
+                    <input type="checkbox" name="idiomas" value="Aleman" onchange="mostrar_idiomas()"/> Alemán
+                </li> <hr/>
+
+                <li> <label class="apartado"> Comentario personal : </label> <textarea id="comentario" onchange="validar_campo_vacio_comentario()" placeholder="Introduce el DNI"> </textarea> </li> <hr/>
+
+                <li> 
+                    <label class="apartado"> Cuenta corriente : </label> 
+                    <input type="text" id="codigo_banco" onchange="validar_campo_cuenta_bancaria()" placeholder="Codigo del banco"/>
+                    <input type="text" id="codigo_sucursal" onchange="validar_campo_cuenta_bancaria()" placeholder="Codigo de sucursal"/>
+                    <input type="text" id="digitos_control" onchange="validar_campo_cuenta_bancaria()" placeholder="Digitos de control"/>
+                    <input type="text" id="numero_cuenta" onchange="validar_campo_cuenta_bancaria()" placeholder="Numero de cuenta"/>
+                </li> <hr/>
+                        
+                <li> <label class="apartado"> Hora del envío : </label> <input type="text" id="hora_envio" onchange="validar_campo_hora();" > </li> <hr/>
+
+                <li> 
+                    <label class="apartado"> </label>
+                    <input type="submit" id="enviar" value="Enviar" onclick="enviar()"/>
+                    <input type="reset" id="resetear" value="Resetear" onclick="resetear()"/>
+                </li>
+                    
+            </ul>
+
+        </form>
+                      
+    </body>
+
+</html>
