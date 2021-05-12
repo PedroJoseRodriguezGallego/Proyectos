@@ -64,7 +64,7 @@ Repositorio con todos los proyectos realizados por Pedro José Rodríguez Galleg
 	
 	- Cuestionario en tiempo real : Cuestionario creado en HTML que permite ver en tiempo real la cantidad de cada opcion marcada usando Javascript
 	
-	- Formulario CSS : 
+	- Formulario CSS : Formulario creado en HTML en el que editamos sus estilos con CSS.
 	
 	- Formulario JS : 
 	
