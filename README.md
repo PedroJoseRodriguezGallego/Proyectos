@@ -28,7 +28,7 @@ Repositorio con todos los proyectos realizados por Pedro José Rodríguez Galleg
 	
 	- Gestor Ficheros : Aplicación que nos permite realizar distintas operaciones con ficheros (editar contenido, contar palabras, copiar archivo, cifrar archivo, ...) por medio de una interfaz grafica (usando JavaFX).
 	
-	- Gestion Taller : 
+	- Gestion Taller : Aplicación que nos permite gestionar los datos de un taller mostrandolo en tablas dinamicas y generando reportes sobre los datos (usando JasperReports, Swing y MySQL)
 
 
 
@@ -62,7 +62,7 @@ Repositorio con todos los proyectos realizados por Pedro José Rodríguez Galleg
 
 --> WEB (HTML, CSS, JS, PHP)
 	
-	- Cuestionario en tiempo real : 
+	- Cuestionario en tiempo real : Cuestionario creado en HTML que permite ver en tiempo real la cantidad de cada opcion marcada usando Javascript
 	
 	- Formulario CSS : 
 	
