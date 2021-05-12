@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Quizz Europe</string>
+    <string name="indicaCapital">Indica la capital de los paises que apareceran tras iniciar el juego</string>
+    <string name="buttonText">Pulse para empezar</string>
+</resources>

@@ -4,7 +4,7 @@ import validators
 import os
 import glob
 import InformationPJRG as calculadora
-import MediaDownloaderPJRG as downloader
+import YoutubeDownloaderPJRG as downloader
 import InstagramPJRG as scraper
 
 # region variables
@@ -15,16 +15,13 @@ commands = {"/help": "Comandos disponibles",
             "/info": "Datos del desarrollador",
             "/stats": "Información sobre el bot",
             "/scrapInstagram": "Descarga todos los datos de cualquier usuario de instagram",
-            "/comment": "Deja un comentario para que podamos leerte",
             "/autoFollow": "Aumenta tus seguidores indicando el nombre de usuario",
-            "/transcript": "Pasa de audio a texto",
             "/downloadSong": "Descarga cualquier cancion",
             "/downloadVideo": "Descarga cualquier video"}
 
 esperandoEnlaceAudio = False
 esperandoEnlaceVideo = False
 esperandoPerfilInstagram = False
-esperandoComentario = False
 esperandoFollow = False
 # endregion
 
@@ -36,7 +33,7 @@ try:
         mensaje = "<b><u>Comandos disponibles</u></b>\n"
 
         for command in commands:
-            mensaje = mensaje + (f"\n<i>{command}</i>  :  {commands[command]}")
+            mensaje = mensaje + f"\n<i>{command}</i>  :  {commands[command]}"
 
         bot.reply_to(message, mensaje, parse_mode="HTML")
 
@@ -53,29 +50,15 @@ try:
 
 
     @bot.message_handler(commands=['downloadSong'])
-    def descargarAudio(message):
+    def infoDesarrollador(message):
         calculadora.aumentarComandos()
         bot.send_message(message.chat.id, "Introduce un enlace de <b>YouTube</b>", parse_mode="HTML")
         global esperandoEnlaceAudio
         esperandoEnlaceAudio = True
 
 
-    @bot.message_handler(commands=['comment'])
-    def contactarDesarrollador(message):
-        calculadora.aumentarComandos()
-        bot.send_message(message.chat.id, "Introduce el nombre del solicitante y el comentario separado por una coma (nombre,comentario)", parse_mode="HTML")
-        global esperandoComentario
-        esperandoComentario = True
-
-
-    @bot.message_handler(commands=['scrapInstagram'])
-    def transcribir(message):
-        calculadora.aumentarComandos()
-        bot.reply_to(message, "Funcion aun en desarrollo")
-
-
     @bot.message_handler(commands=['downloadVideo'])
-    def descargarVideo(message):
+    def infoDesarrollador(message):
         calculadora.aumentarComandos()
         bot.send_message(message.chat.id, "Introduce un enlace de <b>YouTube</b>", parse_mode="HTML")
         global esperandoEnlaceVideo
@@ -83,7 +66,7 @@ try:
 
 
     @bot.message_handler(commands=['scrapInstagram'])
-    def scrapInstagram(message):
+    def infoDesarrollador(message):
         calculadora.aumentarComandos()
         bot.send_message(message.chat.id, "Introduce un perfil de <b>Instagram</b>", parse_mode="HTML")
         global esperandoPerfilInstagram
@@ -91,7 +74,7 @@ try:
 
 
     @bot.message_handler(commands=['autoFollow'])
-    def aumentarSeguidores(message):
+    def infoDesarrollador(message):
         calculadora.aumentarComandos()
         bot.send_message(message.chat.id, "Introduce un usuario de <b>Instagram</b>", parse_mode="HTML")
         global esperandoFollow
@@ -106,9 +89,10 @@ try:
 
 
     @bot.message_handler(commands=['stats'])
-    def mostrarEstadisticas(message):
+    def mensajeBienvenida(message):
         calculadora.aumentarComandos()
         bot.reply_to(message, f"Conexiones globales : {calculadora.consultarConexiones()}\nComandos usados : {calculadora.consultarComandos()}")
+
 
     @bot.message_handler(func=lambda message: True)
     def echo_all(message):
@@ -117,7 +101,7 @@ try:
         global esperandoPerfilInstagram
         global esperandoFollow
 
-        if esperandoEnlaceAudio or esperandoEnlaceVideo or esperandoPerfilInstagram or esperandoComentario or esperandoFollow:
+        if esperandoEnlaceAudio or esperandoEnlaceVideo or esperandoPerfilInstagram or esperandoFollow:
             gestionRespuestas(message)
         else:
             bot.send_message(message.chat.id, "Por favor, introduce un comando valido")
@@ -130,7 +114,6 @@ def gestionRespuestas(message):
     global esperandoEnlaceAudio
     global esperandoEnlaceVideo
     global esperandoPerfilInstagram
-    global esperandoComentario
     global esperandoFollow
 
     try:
@@ -140,7 +123,7 @@ def gestionRespuestas(message):
             if validador:
                 bot.send_message(message.chat.id, "Descarga en proceso...")
                 if esperandoEnlaceAudio:
-                    song = downloader.descargarAudio(message.text, 'm4a')
+                    song = downloader.descargarAudio(message.text)
                     bot.send_message(message.chat.id, "Enviando audio...")
                     bot.send_audio(message.chat.id, audio=open(song, 'rb'))
                     os.remove(song)
@@ -159,11 +142,8 @@ def gestionRespuestas(message):
             comprimido = open(datos, 'rb')
             bot.send_message(message.chat.id, "Enviando datos...")
             bot.send_document(message.chat.id, comprimido)
-        elif esperandoComentario:
-            bot.send_message(message.chat.id, "Gracias por su colaboracion")
-            calculadora.guardarComentario(message.text)
         elif esperandoFollow:
-            bot.send_message(message.chat.id, f"Aumentaremos sus seguidores en : +{scraper.getBots()}")
+            bot.send_message(message.chat.id, f"Aumentaremos sus seguidores en : + {scraper.getBots()}")
             scraper.lanzarBots(message.text)
     except:
         traceback.print_exc()
@@ -179,12 +159,11 @@ def gestionRespuestas(message):
         elif esperandoPerfilInstagram:
             bot.send_message(message.chat.id, "El perfil indicado no existe, no es accesible o tiene demasiados archivos")
         elif esperandoFollow:
-            bot.send_message(message.chat.id,"El perfil indicado no existe")
+            bot.send_message(message.chat.id,"El perfil indicado no existe, o ha fallado la automatizacion")
 
     esperandoEnlaceAudio = False
     esperandoEnlaceVideo = False
     esperandoPerfilInstagram = False
-    esperandoComentario = False
 # endregion
 
 

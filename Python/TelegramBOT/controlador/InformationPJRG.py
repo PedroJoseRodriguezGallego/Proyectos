@@ -7,15 +7,6 @@ conexiones = 0
 comandos = 0
 
 
-def guardarComentario(message):
-    info = message.split(",")
-
-    with open('../resources/comments.csv', 'a') as file:
-        fileWriter = csv.writer(file)
-        fileWriter.writerow([info[0],info[1]])
-    file.close()
-
-
 def aumentarComandos():
     with open('../resources/information.csv', 'r') as file:
         datos = list(csv.reader(file))
@@ -68,3 +59,7 @@ def consultarConexiones():
     with open('../resources/information.csv', 'r') as file:
         datos = list(csv.reader(file))
     return int(datos[1][0])
+
+
+if __name__ == "__main__":
+    print('ok')

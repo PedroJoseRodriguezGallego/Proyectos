@@ -8,7 +8,7 @@
 
 {% block content %}
     <div class="elemento">
-    {% if request.user|has_group:"tutores" %}
+    {% if request.user|has_group:"tutores" or request.user|has_group:"empresas" %}
         <a class="btn btn-default" href="{% url 'empresa_edit' pk=empresa.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         <a class="btn btn-default" href="{% url 'empresa_delete' pk=empresa.pk %}"><span class="glyphicon glyphicon-minus"></span></a>
     {% endif %}
@@ -22,14 +22,14 @@
             <li> <label class="nombreCampo"> Localidad </label> {{ empresa.localidad }} </li>
             <li>
                 <ul>
-                    <span class="nombreCampo"> Responsable </span>
+                    <span class="nombreCampo listaModificada"> Responsable </span>
                     <li> <label class="nombreCampo"> Nombre y apellidos </label> {{ empresa.nombreResponsable }} {{ empresa.apellidosResponsable }}</li>
                     <li> <label class="nombreCampo"> DNI </label> {{ empresa.dniResponsable }} </li>
                 </ul>
             </li>
             <li>
                 <ul>
-                    <span class="nombreCampo"> Tutor laboral </span>
+                    <span class="nombreCampo listaModificada"> Tutor laboral </span>
                     <li> <label class="nombreCampo"> Nombre y apellidos </label> {{ empresa.nombreTutorLaboral }} {{ empresa.apellidosTutorLaboral }}</li>
                     <li> <label class="nombreCampo"> DNI </label> {{ empresa.dniTutorLaboral }} </li>
                     <li> <label class="nombreCampo"> Email </label> {{ empresa.emailTutorLaboral }} </li>

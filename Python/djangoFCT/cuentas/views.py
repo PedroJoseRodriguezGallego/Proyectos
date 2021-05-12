@@ -30,6 +30,14 @@ def register(request):
                 user.save()
                 cuenta.save()
                 return redirect('loggin')
+            elif cuenta.tipo == 'Empresa':
+                user = User.objects.create_user(cuenta.usuario, cuenta.usuario + '@enterprise.es', cuenta.contrasena)
+                user.save()
+                group = Group.objects.get(name='empresas')
+                user.groups.add(group)
+                user.save()
+                cuenta.save()
+                return redirect('loggin')
     else:
         form = CuentaRegisterForm()
 

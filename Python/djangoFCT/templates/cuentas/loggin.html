@@ -1,6 +1,13 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block estilo %}
+    label
+    {
+        color: white;
+    }
+{% endblock %}
+
 {% block title %}
     Login
 {% endblock %}
@@ -8,7 +15,7 @@
 {% block content %}
     <div class="superDivIndex">
         <div class="elementoIndice">
-            <h2 class="formh2">Iniciar sesión</h2>
+            <h2 class="formh2">Inicio de sesión</h2>
             <form method="POST" class="elemento-form inputclass">{% csrf_token %}
                 <div>
                     {{ form.as_p }}

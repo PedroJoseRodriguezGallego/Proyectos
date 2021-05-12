@@ -8,6 +8,7 @@
 
 {% block content %}
     <div class="superDivIndex">
+    {% if request.user|has_group:"tutores" or request.user|has_group:"alumnos" or request.user|has_group:"empresas" %}
         <div class="elementoIndice">
             <h1>
                 <a href="{% url 'alumnos_list'%}">
@@ -19,28 +20,33 @@
                 </a>
             </h1>
         </div>
+        {% endif %}
+        {% if request.user|has_group:"tutores" or request.user|has_group:"alumnos" or request.user|has_group:"empresas" %}
         <div class="elementoIndice">
             <h1>
                 <a href="{% url 'empresas_list'%}">
                     <span class="spanInicio">
-                        <i class="bi bi-building"></i>
-                        &nbsp;&nbsp;Empresas&nbsp;&nbsp;
-                        <i class="bi bi-building"></i>
+                        &nbsp;<i class="bi bi-building"></i>
+                        &nbsp;&nbsp;&nbsp;Empresas&nbsp;&nbsp;&nbsp;
+                        <i class="bi bi-building"></i>&nbsp;
                     </span>
                 </a>
             </h1>
         </div>
+        {% endif %}
+        {% if request.user|has_group:"tutores" or request.user|has_group:"alumnos" %}
         <div class="elementoIndice">
             <h1>
                 <a href="{% url 'tutoresDocentes_list'%}">
                     <span class="spanInicio">
-                        &nbsp;<i class="bi bi-person-badge"></i>
-                        &nbsp;&nbsp;&nbsp;Tutores&nbsp;&nbsp;&nbsp;
-                        <i class="bi bi-person-badge"></i>&nbsp;
+                        <i class="bi bi-person-badge"></i>
+                        &nbsp;&nbsp;Tutores&nbsp;&nbsp;
+                        <i class="bi bi-person-badge"></i>
                     </span>
                 </a>
             </h1>
         </div>
+        {% endif %}
         {% if request.user|has_group:"tutores" %}
             <div class="elementoIndice">
                 <h1>

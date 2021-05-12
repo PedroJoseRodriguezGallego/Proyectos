@@ -3,27 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c54b34ba-51b0-4cdb-9c83-e00a1e8e74c5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asignados/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/asignados/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reporte.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/alumnos/alumno_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/alumnos/alumno_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/alumnos/alumno_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/alumnos/alumno_edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/alumnos/alumno_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/alumnos/alumno_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/asignados/asignado_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/asignados/asignado_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/asignados/asignado_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/asignados/asignado_edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/asignados/asignado_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/asignados/asignado_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/asignados/informeAsignado_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/asignados/informeAsignado_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/asignados/informeAsignado_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/asignados/informeAsignado_edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cuentas/loggin.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cuentas/loggin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cuentas/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cuentas/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/empresas/empresa_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/empresas/empresa_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/empresas/empresa_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/empresas/empresa_edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/empresas/empresa_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/empresas/empresa_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/tutoresDocentes/tutorDocente_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tutoresDocentes/tutorDocente_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/tutoresDocentes/tutorDocente_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tutoresDocentes/tutorDocente_edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/tutoresDocentes/tutorDocente_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tutoresDocentes/tutorDocente_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validador.py" beforeDir="false" afterPath="$PROJECT_DIR$/validador.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,8 +66,9 @@
       <recent name="C:\Users\Pedro\Desktop\GIT_2021_PCSD1_FCT_DJANGO\2021_PCSD1_FCT_DJANGO\djangoFCT\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Pedro\Desktop\GIT_2021_PCSD1_FCT_DJANGO\2021_PCSD1_FCT_DJANGO\djangoFCT" />
       <recent name="C:\Users\Pedro\Desktop\GIT_2021_PCSD1_FCT_DJANGO\2021_PCSD1_FCT_DJANGO\djangoFCT\djangoFCT\static\images" />
+      <recent name="C:\Users\Pedro\Desktop\GIT_2021_PCSD1_FCT_DJANGO\2021_PCSD1_FCT_DJANGO\djangoFCT\templates\asignados" />
+      <recent name="C:\Users\Pedro\Desktop\GIT_2021_PCSD1_FCT_DJANGO\2021_PCSD1_FCT_DJANGO\djangoFCT" />
       <recent name="C:\Users\Pedro\Desktop\GIT_2021_PCSD1_FCT_DJANGO\2021_PCSD1_FCT_DJANGO\djangoFCT\djangoFCT" />
       <recent name="C:\Users\Pedro\Desktop\GIT_2021_PCSD1_FCT_DJANGO\2021_PCSD1_FCT_DJANGO\djangoFCT\templates" />
     </key>
@@ -211,6 +192,19 @@
       <workItem from="1618930677971" duration="3642000" />
       <workItem from="1618940191039" duration="1680000" />
       <workItem from="1618953693366" duration="6858000" />
+      <workItem from="1619169910556" duration="447000" />
+      <workItem from="1619423590203" duration="33000" />
+      <workItem from="1619533608193" duration="658000" />
+      <workItem from="1619546586907" duration="74000" />
+      <workItem from="1619589658266" duration="1713000" />
+      <workItem from="1619617485105" duration="3239000" />
+      <workItem from="1620138751436" duration="456000" />
+      <workItem from="1620140498518" duration="73000" />
+      <workItem from="1620140862295" duration="737000" />
+      <workItem from="1620187296103" duration="2020000" />
+      <workItem from="1620218341268" duration="2944000" />
+      <workItem from="1620633231089" duration="786000" />
+      <workItem from="1620658329543" duration="705000" />
     </task>
     <servers />
   </component>

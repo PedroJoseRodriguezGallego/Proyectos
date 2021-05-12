@@ -4,20 +4,20 @@ import subprocess
 import shutil
 import os
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 
 
 def followAccount(usuario, contra, target):
     chromedriver_path = '../resources/chromedriver.exe'
-    chrome_options = Options().add_experimental_option("detach", True)
-    browser = webdriver.Chrome(options=chrome_options, executable_path=chromedriver_path)
+    options = webdriver.ChromeOptions()
+    #options.add_argument('headless')
+    browser = webdriver.Chrome(executable_path=chromedriver_path, options=options)
     browser.implicitly_wait(5)
 
     browser.get('https://www.instagram.com/')
 
     sleep(5)
 
-    cookiesButton = browser.find_element_by_xpath("/html/body/div[2]/div/div/div/div[2]/button[1]")
+    cookiesButton = browser.find_element_by_xpath("/html/body/div[2]/div/div/button[1]")
     cookiesButton.click()
 
     username_input = browser.find_element_by_css_selector("input[name='username']")
@@ -60,7 +60,7 @@ def followAccount(usuario, contra, target):
 
 def scrapearImagenes(perfil):
     subprocess.run('instagram-scraper ' + perfil + ' -u botspjrg1 -p Admin1234_')
-    archivo_zip = shutil.make_archive(perfil, "zip", perfil) #Solo lo envia si pesa menos de 50mb
+    archivo_zip = shutil.make_archive(perfil, "zip", perfil) #comprimir usando un comando de windows y dividirlo por volumenes de menos de 45mb y enviar el array de comprimidos
     os.remove("instagram-scraper.log")
     return archivo_zip
 
@@ -87,3 +87,6 @@ def getBots():
                 index = index + 1
 
     return index
+
+if __name__ == "__main__":
+    followAccount('botpjrg1', 'Admin1234_', 'prodriguezgallego')

@@ -1,6 +1,13 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block estilo %}
+    label
+    {
+        color: white;
+    }
+{% endblock %}
+
 {% block title %}
     Registro
 {% endblock %}
@@ -8,15 +15,15 @@
 {% block content %}
     <div class="superDivIndex">
         <div class="elementoIndice">
-            <h2 class="formh2">Registrar usuario</h2>
-            <form method="POST" class="elemento-form inputclass selectclass">{% csrf_token %}
+            <h2 class="formh2">Registro de usuario</h2>
+            <form method="POST" class="elemento-form inputclass selectclass colorForm">{% csrf_token %}
                 <div>
                     {{ form.as_p }}
                 </div>
                 <button type="submit" class="btn btn-outline-success whiteBack">REGISTRAR</button>
                 <button type="reset" class="btn btn-outline-warning whiteBack">RESETEAR</button>
             </form>
-            <a class="editedlink" href="{% url 'loggin' %}">Inicia sesión</a>
+            <a class="editedlink" href="{% url 'loggin' %}">Inicio de sesión</a>
         </div>
     </div>
 {% endblock %}

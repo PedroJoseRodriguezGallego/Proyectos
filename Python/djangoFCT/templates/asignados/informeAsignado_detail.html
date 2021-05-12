@@ -81,6 +81,10 @@
             </table>
 
             <p style="text-align: center; margin-top: 15px">
-                <script> document.write(new Date().toLocaleDateString()); </script>
+                <script>
+                    var meses = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+                    var fecha = new Date();
+                    document.write(fecha.getDate() + " de " + meses[fecha.getMonth()] + " de " + fecha.getFullYear());
+                </script>
             </p>
 {% endblock %}

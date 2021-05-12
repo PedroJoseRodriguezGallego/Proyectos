@@ -24,9 +24,9 @@ Repositorio con todos los proyectos realizados por Pedro José Rodríguez Galleg
 	
 	- Visor Cuentas : Aplicación que nos permite recorrer bidireccionalmente datos y modificarlos (usando JavaFX y CSS).
 	
-	- Neuafrica :  Aplicación android que nos muestra las distintas capitales de África junto a una serie de opciones hasta completarlas todas (usando SQLite3).
+	- Neuafrica :  Aplicación Android que nos muestra las distintas capitales de África junto a una serie de opciones hasta completarlas todas (usando SQLite3).
 	
-	- Gestor Ficheros : 
+	- Gestor Ficheros : Aplicación que nos permite realizar distintas operaciones con ficheros (editar contenido, contar palabras, copiar archivo, cifrar archivo, ...) por medio de una interfaz grafica (usando JavaFX).
 	
 	- Gestion Taller : 
 
@@ -34,7 +34,9 @@ Repositorio con todos los proyectos realizados por Pedro José Rodríguez Galleg
 
 --> Kotlin
 
-	- Neuropa : Aplicación android que nos muestra las distintas capitales de Europa junto a una serie de opciones hasta completarlas todas.
+	- Quizz Europe : Aplicación android que nos muestra las distintas capitales de Europa junto a sus banderas y una serie de opciones hasta completarlas todas.
+	
+	- RandomPerson : Aplicación android que permite realizar un sorteo con un ganador aleatorio entre los candidatos introducidos (usando RecyclerView).
 	
 	- Numerandom : Aplicación android que genera un número aleatorio dependiendo de la cantidad indicada.
 	
@@ -54,7 +56,7 @@ Repositorio con todos los proyectos realizados por Pedro José Rodríguez Galleg
 	
 	- Gestion Hospital : Aplicación que nos permite gestionar una base de datos de un hospital (usando MariaDB y Tkinter).
 	
-	- DjangoFCT : Aplicación con el framework Django en la que gestionamos una institucion de educacion.
+	- DjangoFCT : Aplicación con el framework Django en la que gestionamos una institución de educación.
 
 
 

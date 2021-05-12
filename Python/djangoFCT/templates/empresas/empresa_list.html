@@ -23,7 +23,7 @@
         <h2 class="noElement">No hay ninguna empresa registrada</h2>
     {% endif %}
 
-    {% if request.user|has_group:"tutores" %}
+    {% if request.user|has_group:"tutores" or request.user|has_group:"empresas" %}
         <a href="{% url 'empresa_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
     {% endif %}
     <h4><a href="{% url 'index' %}">Volver al inicio</a></h4>
