@@ -66,8 +66,8 @@ Repositorio con todos los proyectos realizados por Pedro José Rodríguez Galleg
 	
 	- Formulario CSS : Formulario creado en HTML en el que editamos sus estilos con CSS.
 	
-	- Formulario JS : 
+	- Formulario JS : Formulario creado en HTMl que se validara usando Javascript.
 	
-	- Formulario PHP : 
+	- Formulario PHP : Formulario creado en HTMl que se validara usando PHP.
 	
-	- Reproductor de video : 
+	- Reproductor de video : Reproductor de video creado en HTML que te permite operar sobre el (pausar, avanzar, ...) usando Javascript.
