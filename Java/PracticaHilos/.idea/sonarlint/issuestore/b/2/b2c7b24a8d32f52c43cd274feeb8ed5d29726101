@@ -1,0 +1,25 @@
+
+N	java:S106-"9Replace this use of System.out or System.err by a logger.(ƒ‘õ¡
+a
+java:S2142+"FEither re-interrupt this method or rethrow the "InterruptedException".(ÇâŞáøÿÿÿÿ
+B
+java:S1948"'Make "hilo2" transient or serializable.(ÀŒ½´ùÿÿÿÿ
+P
+java:S11618":Add the "@Override" annotation above this method signature(­ƒ”É
+D
+java:S1874	".Remove this use of "Applet"; it is deprecated.(Ö‚ü
+D
+java:S1659")Declare "stopButton2" on a separate line.(„ë¶˜ÿÿÿÿÿ
+D
+java:S1121C".Extract the assignment out of this expression.(Àºîİ
+U
+java:S1161#":Add the "@Override" annotation above this method signature(ÿŸ¾Ğüÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(•Şõÿÿÿÿÿÿ
+>
+java:S1659"#Declare "hilo2" on a separate line.(ÀŒ½´ùÿÿÿÿ
+I
+java:S1121F".Extract the assignment out of this expression.(¶Õøÿÿÿÿ
+P
+java:S1161N":Add the "@Override" annotation above this method signature(è­›
+B
+java:S1948"'Make "hilo1" transient or serializable.(ÀŒ½´ùÿÿÿÿ

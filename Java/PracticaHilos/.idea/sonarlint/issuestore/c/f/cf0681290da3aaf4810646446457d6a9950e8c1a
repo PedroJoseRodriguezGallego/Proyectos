@@ -1,0 +1,12 @@
+
+7
+java:S2189""Add an end condition to this loop.(¤èÄ7
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ê¢Ñá
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­¾½ÿÿÿÿÿ
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šù©Ñ
+U
+java:S11610":Add the "@Override" annotation above this method signature(ÿŸ¾Ğüÿÿÿÿ
+a
+java:S2142="FEither re-interrupt this method or rethrow the "InterruptedException".(ÇâŞáøÿÿÿÿ
+S	java:S1067"9Replace this use of System.out or System.err by a logger.(´ÇÁûıÿÿÿÿ
+S	java:S106?"9Replace this use of System.out or System.err by a logger.(ıĞ¶šıÿÿÿÿ

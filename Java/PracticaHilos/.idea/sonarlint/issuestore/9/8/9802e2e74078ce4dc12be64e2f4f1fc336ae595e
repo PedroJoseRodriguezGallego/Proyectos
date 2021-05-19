@@ -1,0 +1,20 @@
+
+p
+java:S1450
+"URemove the "fuente" field and declare it as a local variable in the relevant methods.(©Ô÷ ûÿÿÿÿ
+O
+java:S1161":Add the "@Override" annotation above this method signature(ú¡­,
+D
+java:S1874".Remove this use of "Applet"; it is deprecated.(¿Öâá
+a
+java:S2142!"FEither re-interrupt this method or rethrow the "InterruptedException".(‚¦¡ûûÿÿÿÿ
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(óˆìıÿÿÿÿ8ºÓË×.
+P
+java:S1161":Add the "@Override" annotation above this method signature( Üó
+C	java:S108!")Either remove or fill this block of code.(‚¦¡ûûÿÿÿÿ
+P
+java:S1161$":Add the "@Override" annotation above this method signature(¶øÂÁ
+U
+java:S1161(":Add the "@Override" annotation above this method signature(À–®»ÿÿÿÿÿ
+A
+java:S1948	"&Make "hilo" transient or serializable.(öˆß”øÿÿÿÿ

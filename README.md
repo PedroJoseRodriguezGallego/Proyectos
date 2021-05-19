@@ -29,6 +29,8 @@ Repositorio con todos los proyectos realizados por Pedro José Rodríguez Galleg
 	- Gestor Ficheros : Aplicación que nos permite realizar distintas operaciones con ficheros (editar contenido, contar palabras, copiar archivo, cifrar archivo, ...) por medio de una interfaz grafica (usando JavaFX).
 	
 	- Gestion Taller : Aplicación que nos permite gestionar los datos de un taller mostrandolo en tablas dinamicas y generando reportes sobre los datos (usando JasperReports, Swing y MySQL)
+	
+	- Practica Hilos : Conjunto de mini proyectos creados usando programación de hilos y procesos.
 
 
 

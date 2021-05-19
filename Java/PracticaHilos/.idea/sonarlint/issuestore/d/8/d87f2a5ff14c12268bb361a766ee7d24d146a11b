@@ -1,0 +1,8 @@
+
+N	java:S106	"9Replace this use of System.out or System.err by a logger.(ÿ¿ß
+a
+java:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ÇâŞáøÿÿÿÿ
+U
+java:S1161":Add the "@Override" annotation above this method signature(ÿŸ¾Ğüÿÿÿÿ
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(š’æˆÿÿÿÿÿ8ˆã®Ë×.
+u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÆËœT8§†­Ë×.
