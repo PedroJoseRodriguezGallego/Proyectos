@@ -31,6 +31,8 @@ Repositorio con todos los proyectos realizados por Pedro José Rodríguez Galleg
 	- Gestion Taller : Aplicación que nos permite gestionar los datos de un taller mostrandolo en tablas dinamicas y generando reportes sobre los datos (usando JasperReports, Swing y MySQL)
 	
 	- Practica Hilos : Conjunto de mini proyectos creados usando programación de hilos y procesos.
+	
+	- Comunicación redes : Conjunto de mini proyectos creados usando clases de servidores y clientes para la comunicación entre estos .
 
 
 
